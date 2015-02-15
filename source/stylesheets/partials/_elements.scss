@@ -1,0 +1,25 @@
+%block{
+  padding: 30px;
+  *:last-child{
+    margin-bottom: 0;
+  }
+}
+.note{
+  border: 3px dashed #333;
+  @extend %block;
+}
+
+.homework{
+  background: #fff;
+  @extend %block;
+  h4{
+    margin: -30px;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.tweet{
+  background: #fff;
+}

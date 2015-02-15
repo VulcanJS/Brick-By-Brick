@@ -1,0 +1,35 @@
+header{
+  text-align: center;
+}
+
+.intro{
+  >p:first-of-type{
+    font-size: 30px;
+  }
+  .intro-note{
+    background: #fff;
+    @extend %block;
+  }
+}
+
+.toc{
+  text-align: center;
+  h2{
+  }
+  .toc-contents{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  a{
+    display: block;
+    background: white;
+    margin-bottom: 30px;
+    @include medium{
+      width: 30%;
+      margin-right: 5%;
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+figure{
+    margin: $spacing*2 auto $spacing*2 auto;
+    @include small{
+      width: 95%;
+    }
+    @include medium{
+      width: 85%;
+    }
+    &.shrink{
+      width: -webkit-min-content;
+      width: -moz-min-content;
+      width: min-content;
+      img{
+        width: auto;
+      }
+    }
+    &.xsmall{
+      max-width: 200px;
+    }
+    &.small{
+      max-width: 400px;
+    }
+    &.left{
+      margin: $spacing 0 $spacing 0;
+    }
+    &.full{
+      width: 100%;
+    }
+    &.wide{
+      width: auto;
+      @include medium{
+        margin: 60px -80px;
+      }
+      img{
+        border: none;
+      }
+    }
+    &.no-border{
+      img{
+        border: none;
+      }
+    }
+    &.shadow{
+      img{
+        border-radius: 3px;
+        @include box-shadow(0px 2px 3px black(0.15));
+      }
+    }
+    img{
+      display: block;
+      width: 100%;
+      border: 5px solid $light-grey;
+    }
+  }
+  figcaption{
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+  }

@@ -1,0 +1,36 @@
+---
+title: 'Telescope: Build your own Hacker News, Reddit, or Product Hunt.'
+page: home
+---
+
+- content_for(:title, current_page.data.title)
+- content_for(:page, current_page.data.page)
+
+%header
+  %h1.logo
+    %a{href: '/'}
+      The Telescope Guide To Community Building
+
+%section.intro.post-content
+  :markdown
+    How do you build great communities? Why do some sites take off while others lose their users and become ghost towns? And more importantly, what can **you** do about it?
+
+    Building an audience is already tricky, but establishing a *community* is even harder: not only do you need to get users to come back, but you also need to convert them into active participants. 
+
+    This guide won't make it easy, but it'll make it easi*er*. Through these 9 community-building techniques, you'll get useful tips and learn what mistakes to avoid. 
+
+    Let's get started!
+    
+  .intro-note
+    :markdown
+      This guide was written for [Telescope](http://telesc.pe), a free open-source app that makes it easy for anybody to launch their own Product Hunt or Hacker News type community. But it should be equally applicable no matter which software you're using to engage your users, from traditional forums to blog comments.
+
+
+
+
+%section.toc
+  %h2 Contents
+  .toc-contents
+    - blog('sections').articles.sort_by! {|post| post.metadata[:page]["date"]}.each_with_index do |section, i|
+      %a.docs-list-link{:href => section.url}
+        =section.title

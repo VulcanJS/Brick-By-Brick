@@ -1,0 +1,41 @@
+
+h1, h2, h3, h4, h5 {
+  font-family: "kulturista-web";
+  font-weight: 700;
+  color: #605e58;
+}
+
+body {
+  font-family: "brandon-grotesque";
+  font-size: 24px;
+  color: #2a2924;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.post-content{
+  >p:first-of-type{
+    font-size: 36px;
+    line-height: 1.4;
+  }
+  h1, h2, h3, h4, h5, p, div, ol, ul{
+    margin: 0 0 $pspacing 0;
+  }
+  ul, ol{
+    li{
+      margin-bottom: 15px;
+    }
+  }
+}
+
+a{
+  font-weight: 500;
+  &:link, &:visited, &:active{
+    color: #c58324;
+    text-decoration: none;
+  }
+  &:hover{
+    color: #f49206;
+    text-decoration: underline;
+  }
+}
