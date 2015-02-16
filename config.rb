@@ -143,37 +143,42 @@ helpers do
     else
       %Q{<figure class="#{css_class}"><img src="#{prefix}#{src}"/><figcaption>#{caption}</figcaption></figure>}
     end
-  end  
+  end
   def diagram(name, caption, css_class="")
     %Q{<figure class="diagram #{css_class}"><img src="/images/diagrams/#{name}@2x.png" alt="#{caption}"/><figcaption>#{caption}</figcaption></figure>}
   end
   def screenshot(name, caption, css_class="")
     %Q{<figure class="screenshot #{css_class}"><img src="/images/screenshots/#{name}.png" alt="#{caption}"/><figcaption>#{caption}</figcaption></figure>}
-  end    
+  end
   def commit(name, caption)
     caption = truncate(caption, :length => 60)
     %Q{<div class="commit"><img src="/images/code.svg"/><div class="message"><h4>Commit #{name}</h4><p>#{caption}</p></div><div class="actions"><a class="commit-link" href="https://github.com/DiscoverMeteor/Microscope/commit/chapter#{name}" target="_blank">View on GitHub</a><a class="instance-link" href="http://meteor-book-chapter#{name}.meteor.com" target="_blank" class="live-instance">Launch Instance</a></div></div>}
-  end  
+  end
   def scommit(name, caption)
     caption = truncate(caption, :length => 60)
     %Q{<div class="commit"><img src="/images/code.svg"/><div class="message"><h4>Commit #{name}</h4><p>#{caption}</p></div><div class="actions"><a class="commit-link" href="https://github.com/DiscoverMeteor/Microscope/commit/sidebar#{name}" target="_blank">View on GitHub</a><a class="instance-link" href="http://meteor-book-sidebar#{name}.meteor.com" target="_blank" class="live-instance">Launch Instance</a></div></div>}
-  end    
+  end
   def tweet(content)
     %Q{<div class="tweet">#{content}</div>}
   end
   def pullquote(content, css_class="left")
     %Q{<blockquote class="pull pull-#{css_class}">#{content}</blockquote>}
-  end        
+  end
   def note(&block)
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :fenced_code_blocks => true)
     content = markdown.render(capture(&block))
     concat %Q{<div class="note">#{content}</div>}
-  end      
+  end
+  def quote(&block)
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :fenced_code_blocks => true)
+    content = markdown.render(capture(&block))
+    concat %Q{<div class="quote"><div class="inner">#{content}</div></div>}
+  end
   def homework(&block)
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :fenced_code_blocks => true)
     content = markdown.render(capture(&block))
     concat %Q{<div class="homework"><h4>Homework</h4>#{content}</div>}
-  end    
+  end
   def chapter(&block)
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :fenced_code_blocks => true)
     content = markdown.render(capture(&block))

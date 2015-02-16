@@ -25,12 +25,28 @@ page: home
     :markdown
       This guide was written for [Telescope](http://telesc.pe), a free open-source app that makes it easy for anybody to launch their own Product Hunt or Hacker News type community. But it should be equally applicable no matter which software you're using to engage your users, from traditional forums to blog comments.
 
+%section.section-download
+  .section-title
+    %h2.inner{'data-content' => 'Download'}
+      %span Download
+  %p Prefer PDF?
 
+%section.section-contents
+  .section-title
+    %h2.inner{'data-content' => 'Contents'}
+      %span Contents
+  .contents-toc
+    - blog('sections').articles.sort_by! {|chapter| chapter.metadata[:page]["date"]}.each_with_index do |chapter, i|
+      %a.chapter-link{:href => chapter.url}
+        .chapter-contents
+          %img.chapter-icon{src: "/images/"+chapter.data.icon}
+          %h3.chapter-title=chapter.data.title
+          %p.chapter-description=chapter.data.description
 
+%section.section-author
+  .section-title
+    %h2.inner{'data-content' => 'The Author'}
+      %span The Author
 
-%section.toc
-  %h2 Contents
-  .toc-contents
-    - blog('sections').articles.sort_by! {|post| post.metadata[:page]["date"]}.each_with_index do |section, i|
-      %a.docs-list-link{:href => section.url}
-        =section.title
+  .author
+    Lorem ipsum dolor.

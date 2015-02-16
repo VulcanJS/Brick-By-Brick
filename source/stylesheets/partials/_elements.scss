@@ -23,3 +23,74 @@
 .tweet{
   background: #fff;
 }
+
+.page-title{
+  text-align: center;
+}
+
+
+.section-title{
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: $pspacing;
+  .inner{
+    @extend .fancy;
+    line-height: 0.72;
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+  }
+  span{
+    padding: 0 20px;
+    &:before, &:after{
+      
+      background: url('/images/stripes-bg.png');
+      background-size: 12px 12px;
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      width: 800px;
+    }
+    &:before{
+      right: 100%;
+    }
+    &:after{
+      left: 100%;
+    }
+  }
+}
+
+.quote{
+  background: url('/images/stripes-bg.png');
+  background-size: 12px 12px;
+  padding: 15px 15px 60px 15px;
+  font-style: italic;
+  .inner{
+    padding: 20px 30px;
+    background: $lighter-beige;
+    position: relative;
+    &:after{
+      content: " ";
+      height: 0;
+      width: 0;
+      top: 100%;
+      right: 40%;
+      position: absolute;      
+      border-style: solid;
+      border-width: 0 15px 15px 0;
+      border-color: transparent $lighter-beige transparent transparent;
+    }
+  }
+  p{
+    margin-bottom: 0px;
+  }
+  h4{
+    margin: 0 -30px -28px 0;
+    top: 32px;
+    font-size: 18px;
+    text-align: right;
+    position: relative;
+  }
+}

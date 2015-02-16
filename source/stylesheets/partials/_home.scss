@@ -4,7 +4,7 @@ header{
 
 .intro{
   >p:first-of-type{
-    font-size: 30px;
+    font-size: 34px;
   }
   .intro-note{
     background: #fff;
@@ -12,18 +12,19 @@ header{
   }
 }
 
-.toc{
+.section-contents{
   text-align: center;
-  h2{
-  }
-  .toc-contents{
+  .contents-toc{
     display: flex;
     flex-wrap: wrap;
   }
-  a{
+  .chapter-link{
     display: block;
     background: white;
     margin-bottom: 30px;
+    position: relative;
+    padding: 30px;
+    // box-shadow: 6px 6px 0 0 rgba($medium-beige, 0.2);
     @include medium{
       width: 30%;
       margin-right: 5%;
@@ -31,5 +32,61 @@ header{
         margin-right: 0;
       }
     }
+    .chapter-contents{
+      z-index: 0;
+      position: relative;
+    }
+    &:before{
+      position: absolute;
+      display: block;
+      content: " ";
+      z-index: -10;
+      top: 6px;
+      left: 6px;
+      height: 100%;
+      width: 100%;
+      background: url('/images/stripes-bg.png');
+      background-size: 12px 12px;
+    }
+    &:after{
+      position: absolute;
+      display: block;
+      content: " ";
+      top: 5px;
+      left: 5px;
+      bottom: 5px;
+      right: 5px;
+      border: 2px solid $light-beige;
+    }
+
+    &:hover{
+      text-decoration: none;
+      &:before{
+        background-color: $medium-beige;
+      }
+      &:after{
+        border-color: $hover-color;
+      }
+    }    
+  }
+  .chapter-icon{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px auto;
+  }
+  .chapter-title{
+    display: block;
+    line-height: 1.4;
+    color: $orange;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .chapter-description{
+    display: block;
+    color: $text-color;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0;
   }
 }

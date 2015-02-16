@@ -20,7 +20,7 @@ $halfspacing: $spacing/2;
 $doublespacing: $spacing*2;
 
 $total-columns  : 12;
-$column-width   : 50px;
+$column-width   : 60px;
 $gutter-width   : $spacing;
 $grid-padding   : 0px;
 
@@ -34,7 +34,7 @@ $grid-padding   : 0px;
   }
   @include medium{
     padding:0 20px;
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
   }
 }

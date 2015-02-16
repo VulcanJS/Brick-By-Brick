@@ -2,7 +2,7 @@
 h1, h2, h3, h4, h5 {
   font-family: "kulturista-web";
   font-weight: 700;
-  color: #605e58;
+  color: $text-color;
 }
 
 body {
@@ -13,13 +13,59 @@ body {
   font-weight: 300;
 }
 
+h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework{
+  margin: 0 0 $pspacing 0;
+}
+
+
+.fancy{
+  font-family: Sullivan;
+  font-size: 120px;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 1;
+  display: block;
+  text-align: center;
+  span, &:after, &:before{
+    display: block;
+    content: attr(data-content);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+  span{
+    position: relative;
+    font-weight: 800;
+    color: white(0.5);
+    z-index: 2;
+  }
+  &:after{
+    position: absolute;
+    font-weight: 100;
+    color: $orange;
+    z-index: 3;
+  }
+  &:before{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-weight: 800;
+    color: $medium-beige;
+    z-index: 1;
+  }
+}
+
+// .dropcap{
+//   float: left;
+//   margin-right: 15px;
+//   font-size: 157px;
+//   margin-top: -3px;
+// }
+
 .post-content{
   >p:first-of-type{
-    font-size: 36px;
+    font-size: 34px;
     line-height: 1.4;
-  }
-  h1, h2, h3, h4, h5, p, div, ol, ul{
-    margin: 0 0 $pspacing 0;
   }
   ul, ol{
     li{
@@ -28,14 +74,15 @@ body {
   }
 }
 
+
 a{
   font-weight: 500;
   &:link, &:visited, &:active{
-    color: #c58324;
+    color: $orange;
     text-decoration: none;
   }
   &:hover{
-    color: #f49206;
+    color: $orange;
     text-decoration: underline;
   }
 }
