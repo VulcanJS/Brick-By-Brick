@@ -13,7 +13,7 @@ body {
   font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework{
+h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework, .intro-note{
   margin: 0 0 $pspacing 0;
 }
 
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework{
 
 
 a{
-  font-weight: 500;
+  font-weight: 700;
   &:link, &:visited, &:active{
     color: $orange;
     text-decoration: none;

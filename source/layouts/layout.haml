@@ -21,13 +21,16 @@
       try{Typekit.load();}catch(e){}
 
   %body{:class => yield_content(:page)}
-    .bg
+    %header.large
+      %h1.logo
+        %a{href: '/'}
+          The Telescope Guide To Community Building
     .container
       =yield
-      %footer
-        .row
-          :markdown
-            &copy; 2015 Sacha Greif for the [Telescope](http://telesc.pe) project. [Get in touch](mailto:hello@telesc.pe).
+    %footer
+      .row
+        :markdown
+          &copy; 2015 Sacha Greif for the [Telescope](http://telesc.pe) project. [Get in touch](mailto:hello@telesc.pe).
 
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"}
     %script{:src => "//static.getclicky.com/js", :type => "text/javascript"}
