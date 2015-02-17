@@ -1,3 +1,5 @@
+@import url(/fonts/Sullivan-Regular.otf);
+
 %secondary-font{
   font-family: "kulturista-web";
   font-weight: 600;
@@ -25,7 +27,7 @@ strong{
 }
 
 .fancy{
-  font-family: Sullivan;
+  font-family: Sullivan-Regular;
   font-size: 120px;
   text-transform: uppercase;
   position: relative;
