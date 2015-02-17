@@ -1,5 +1,12 @@
-@import url(/fonts/Sullivan-Regular.otf);
-
+@font-face {
+  font-family: Sullivan;
+  src: url("/fonts/Sullivan-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Sullivan;
+  font-weight: bold;
+  src: url("/fonts/Sullivan-Fill.otf") format("opentype");
+}
 %secondary-font{
   font-family: "kulturista-web";
   font-weight: 600;
@@ -27,7 +34,7 @@ strong{
 }
 
 .fancy{
-  font-family: Sullivan-Regular;
+  font-family: Sullivan;
   font-size: 120px;
   text-transform: uppercase;
   position: relative;
