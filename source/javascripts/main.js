@@ -8,4 +8,10 @@ $(function(){
   });
   // window.Dropcap.layout(document.querySelectorAll(".dropcap"), 3);
 
+  // Elements to inject
+  var mySVGsToInject = document.querySelectorAll('.svg');
+
+  // Do the injection
+  SVGInjector(mySVGsToInject);
+
 });

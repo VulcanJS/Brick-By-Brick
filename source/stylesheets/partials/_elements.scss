@@ -1,11 +1,30 @@
 %block{
-  padding: 30px;
+  padding: 20px;
+  h1,h2,h3,h4,h5,ul,ol,p{
+    margin-bottom: 15px;
+  }
   *:last-child{
     margin-bottom: 0;
   }
 }
+
+%shadow{
+  position: relative;
+  &:before{
+    position: absolute;
+    display: block;
+    content: " ";
+    z-index: -10;
+    top: 6px;
+    left: 6px;
+    height: 100%;
+    width: 100%;
+    background: url('/images/stripes-bg.png');
+    background-size: 12px 12px;
+  }
+}
+
 .note{
-  border: 3px dashed #333;
   @extend %block;
 }
 
@@ -28,6 +47,9 @@
   text-align: center;
 }
 
+section{
+  margin-bottom: $spacing * 2;
+}
 
 .section-title{
   overflow: hidden;
@@ -62,6 +84,11 @@
   }
 }
 
+.section-subtitle{
+  text-align: center;
+  font-weight: 300;
+}
+
 .quote{
   background: url('/images/stripes-bg.png');
   background-size: 12px 12px;
@@ -94,3 +121,13 @@
     position: relative;
   }
 }
+
+.avatar{
+  border-radius: 100%;
+  max-width: 200px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border: 4px solid $medium-beige;
+}
+

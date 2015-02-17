@@ -1,8 +1,11 @@
-
-h1, h2, h3, h4, h5 {
+%secondary-font{
   font-family: "kulturista-web";
-  font-weight: 700;
-  color: $text-color;
+  font-weight: 600;
+  color: $text-color;  
+}
+
+h1, h2, h3, h4, h5, .button, textarea, input{
+  @extend %secondary-font;
 }
 
 body {
@@ -17,6 +20,9 @@ h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework, .intro-note{
   margin: 0 0 $pspacing 0;
 }
 
+strong{
+  font-weight: 700;
+}
 
 .fancy{
   font-family: Sullivan;
@@ -36,7 +42,7 @@ h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework, .intro-note{
   span{
     position: relative;
     font-weight: 800;
-    color: white(0.5);
+    color: white(0.7);
     z-index: 2;
   }
   &:after{
@@ -76,7 +82,7 @@ h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework, .intro-note{
 
 
 a{
-  font-weight: 700;
+  font-weight: 600;
   &:link, &:visited, &:active{
     color: $orange;
     text-decoration: none;

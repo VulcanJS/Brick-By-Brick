@@ -1,0 +1,37 @@
+.contributors{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contributor{
+  margin-bottom: $pspacing;
+  @include medium{
+    width: 22%;
+    margin-right: 4%;
+    &:nth-of-type(4n){
+      margin-right: 0;
+    }
+  }
+}
+
+.contributor-image{
+  display: block;
+  line-height: 1;
+  width: 80%;
+  margin: 0 auto;
+  img{
+    @extend .avatar;
+  }
+}
+
+.contributor-name{
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.contributor-community{
+  margin-bottom: 0;
+  font-size: 14px;
+}

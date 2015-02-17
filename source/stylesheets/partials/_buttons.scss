@@ -1,0 +1,54 @@
+.button{
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px 24px;
+  text-transform: uppercase;
+}
+
+.download-button{
+  background: $orange;
+  &, &:link, &:visited, &:active{
+    color: white;
+  }
+  &:hover{
+    background: $dark-brown;
+    text-decoration: none;
+  }
+}
+
+.share-button{
+  // background: $medium-beige;
+  border-radius: 5px;
+  padding: 8px 24px;
+  display: block;
+  &:hover{
+    text-decoration: none;
+    background: $orange;
+    color: white;
+    border-color: $orange;
+    svg path{
+      fill: white;
+    }
+  }
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  border: 2px solid $medium-beige;
+  img, .svg{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top:-2px;
+    path{
+      fill: $orange;
+    }
+  }
+  span{
+    white-space: nowrap;
+  }
+}

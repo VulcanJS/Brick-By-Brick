@@ -5,12 +5,18 @@ body{
 }
 
 header{
+  text-align: center;
   padding: 120px 0;
   margin-bottom: $spacing * 2;
-  // border-bottom: 2px solid #D8D4C3;
+  border-bottom: 2px solid $dark-brown;
   &.large{
     background: url("/images/city-bg.jpg") 0 0 repeat-x;
-    background-size: contain;
+    background: url("/images/bg-header-city3.png") center 100% no-repeat;
+    background-size: 90%;
+  }
+  a{
+    display: block;
+    @include hide-text();
   }
 }
 footer{

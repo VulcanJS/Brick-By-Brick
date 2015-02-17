@@ -16,28 +16,84 @@ page: home
     This guide won't make it easy, but it'll make it easi*er*. Through these 9 community-building techniques, you'll get useful tips and learn what mistakes to avoid. 
 
     Let's get started!
-    
-  .intro-note
-    :markdown
-      This guide was written for [Telescope](http://telesc.pe), a free open-source app that makes it easy for anybody to launch their own Product Hunt or Hacker News type community. But it should be equally applicable no matter which software you're using to engage your users, from traditional forums to blog comments.
+  
+  .telescope-note.note
+    .telescope-screenshot
+      %a{href: "http://telesc.pe"}
+        %img{src: '/images/telescope.png'}
+      %h4.screenshot-legend Telescope, an open-source community app. 
+    .telescope-description
+      :markdown
+        ### Introducing Telescope
+        This guide was written for [Telescope](http://telesc.pe), a free open-source app that makes it easy for anybody to launch their own Product Hunt or Hacker News. 
 
-%section.section-download
+        That being said it, it should be equally applicable to forums, blogs, chat rooms, or any other type of community.
+
+
+%section.section-contributors
+
   .section-title
-    %h2.inner{'data-content' => 'Download'}
-      %span Download
-  %p Prefer PDF?
+    %h2.inner{'data-content' => 'Featuring'}
+      %span Featuring
+
+  %h3.section-subtitle With Contributions From These Fine Folks:
+
+  .contributors
+    - data.contributors.each_with_index do |contributor, i|
+      .contributor
+        %a.contributor-image{href: contributor.link}
+          %img{src: "/images/contributors/"+contributor.image}
+        %h4.contributor-name=contributor.name
+        %h5.contributor-community
+          %a{href: contributor.link}=contributor.community
 
 %section.section-contents
   .section-title
     %h2.inner{'data-content' => 'Contents'}
       %span Contents
+
+  %h3.section-subtitle The Part You've Been Waiting For
+
   .contents-toc
     - blog('sections').articles.sort_by! {|chapter| chapter.metadata[:page]["date"]}.each_with_index do |chapter, i|
       %a.chapter-link{:href => chapter.url}
         .chapter-contents
-          %img.chapter-icon{src: "/images/"+chapter.data.icon}
+          %img.chapter-icon.svg{src: "/images/"+chapter.data.icon}
           %h3.chapter-title=chapter.data.title
           %p.chapter-description=chapter.data.description
+
+%section.section-download
+  .section-title
+    %h2.inner{'data-content' => 'Download'}
+      %span Download
+
+  %h3.section-subtitle Prefer PDF? We've Got You Covered
+
+  %a.download-button.button{href: "#"} Download PDF
+
+%section.section-share
+  .section-title
+    %h2.inner{'data-content' => 'Share'}
+      %span Share
+
+  %h3.section-subtitle Help Us Get The Word Out
+
+
+  .share-widget
+    .tweet-field
+      %textarea The Community Building Guide, a free guide by @telescopeapp http://communitybuildingguide.com #combuild
+    %a.tweet-button.share-button.button{:href => "https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbook.discovermeteor.com&text=To%20celebrate%20the%20release%20of%20%40meteorjs%201.0%2C%20the%20first%208%20chapters%20of%20%40DiscoverMeteor%20are%20free%20this%20week%20only!&url=http%3A%2F%2Fbook.discovermeteor.com%2Fstarter%3Futm_source%3Dstarter%26utm_medium%3Dtwitter%26utm_campaign%3Dstarter_tweet", :target => "_blank"}
+      %img.svg{:alt => "Share on Twitter", :src => "/images/twitter.svg"}/
+      %span Tweet This
+
+    .share-buttons
+      %span.or or
+      %a.facebook-button.share-button.button{:href => "https://www.facebook.com/sharer/sharer.php?u=http://book.discovermeteor.com/starter", :target => "_blank"}
+        %img.svg{:alt => "Share on Facebook", :src => "/images/facebook-square.svg"}/
+        %span Share on Facebook
+      %a.gplus-button.share-button.button{:href => "https://plus.google.com/share?url=http://book.discovermeteor.com/starter", :target => "_blank"}
+        %img.svg{:alt => "Share on Google+", :src => "/images/googleplus-square.svg"}/
+        %span Share on Google+
 
 %section.section-author
   .section-title
@@ -45,4 +101,16 @@ page: home
       %span The Author
 
   .author
-    Lorem ipsum dolor.
+
+    .author-photo
+      %a.author-image{href: "http://sachagreif.com"}
+        %img{src: "/images/sacha.jpg"}
+      .author-name
+        %a{href: "http://sachagreif.com"} Sacha Greif
+    .author-bio
+      :markdown
+        I work on [Telescope](http://telesc.pe), an open-source community app that makes it easy for anybody to launch their own Product Hunt or Hacker News
+
+        I'm also one of the authors of [Discover Meteor](http://discovermeteor.com), a book about the [Meteor](http:..meteor.com) JavaScript framework, and the creator of [Sidebar](http://sidebar.io), a daily newsletter of five great design links.
+
+        You can follow me on [Twitter](http://twitter.com/sachagreif) or learn more about me on [my site](http://sachagreif.com).

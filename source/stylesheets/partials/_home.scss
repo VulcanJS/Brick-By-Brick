@@ -1,14 +1,37 @@
-header{
-  text-align: center;
-}
 
 .intro{
   >p:first-of-type{
     font-size: 34px;
   }
-  .intro-note{
-    background: #fff;
-    @extend %block;
+}
+
+
+.telescope-note{
+  background: $lighter-beige;
+  @extend %block;
+  @extend %shadow;
+  // margin-right: 6px;
+}
+.telescope-description{
+  font-size: 20px;
+  margin-right: 260px + $spacing;
+}
+.telescope-screenshot{
+  text-align: center;
+  width: 260px;
+  float: right;
+  a{
+    box-shadow: 0px 3px 5px black(0.1);
+  }
+  img, a{
+    display: block;
+    width: 100%;
+  }
+  .screenshot-legend{
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    line-height: 1.4;
+    font-weight: 500;
   }
 }
 
@@ -36,18 +59,7 @@ header{
       z-index: 0;
       position: relative;
     }
-    &:before{
-      position: absolute;
-      display: block;
-      content: " ";
-      z-index: -10;
-      top: 6px;
-      left: 6px;
-      height: 100%;
-      width: 100%;
-      background: url('/images/stripes-bg.png');
-      background-size: 12px 12px;
-    }
+    @extend %shadow;
     &:after{
       position: absolute;
       display: block;
@@ -67,6 +79,9 @@ header{
       &:after{
         border-color: $hover-color;
       }
+      .chapter-icon *{
+        stroke: $orange;
+      }
     }    
   }
   .chapter-icon{
@@ -74,6 +89,9 @@ header{
     width: 80px;
     height: 80px;
     margin: 0 auto 15px auto;
+    *{
+      stroke: $dark-brown;
+    }
   }
   .chapter-title{
     display: block;
@@ -90,3 +108,62 @@ header{
     margin-bottom: 0;
   }
 }
+
+.section-download{
+  text-align: center;
+}
+
+.share-widget{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;  
+  text-align: center;
+  .or{
+    @extend %secondary-font;
+    font-size: 18px;
+    margin: 5px 0 10px 0;
+    display: block;
+  }
+}
+.tweet-field{
+  border: 1px solid $medium-beige;
+  @extend %shadow;
+  margin-bottom: $spacing/2;
+  textarea{
+    border: none;
+    padding: $spacing/2;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    min-height: 120px;
+    font-weight: 500;
+  }
+}
+.tweet-button{
+  width: 100%;
+  display: block;
+}
+.facebook-button{
+  margin-bottom: $spacing/2;
+}
+.author{
+  overflow: hidden;
+}
+.author-photo{
+  float: left;
+  margin-right: $spacing;
+  text-align: center;
+}
+.author-image{
+  width: 180px;
+  display: block;
+  line-height: 1;
+  img{
+    @extend .avatar;
+  }
+}
+.author-bio{
+  margin-left: 180px + $spacing;
+  font-size: 22px;
+}
+
