@@ -31,7 +31,7 @@
     font-size: 14px;
     margin: 10px 0 0 0;
     line-height: 1.4;
-    font-weight: 500;
+    font-weight: $light2;
   }
 }
 
@@ -63,8 +63,8 @@
     width: 100%;
     display: block;
     font-size: 16px;
-    min-height: 120px;
-    font-weight: 500;
+    min-height: 140px;
+    font-weight: $light2;
     line-height: 1.6;
   }
   .tweet-counter{

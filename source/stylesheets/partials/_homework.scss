@@ -28,8 +28,8 @@ $color: $medium-beige;
     padding: $spacing/2 $spacing;
     margin: 0 10px;
     position: relative;
-    background: url('/images/stripes-bg.png');
-    background-size: 12px 12px;
+    @extend %striped;
+    background-color: $lighter-beige;
     &:after{
       display: block;
       content: " ";
@@ -43,7 +43,7 @@ $color: $medium-beige;
     }
   }
   ul{
-    // background: $lighter-beige;
+    background: $lighter-beige;
     padding: $spacing $spacing*2;
     margin: 0 10px;
     // @extend %shadow;

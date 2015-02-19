@@ -1,3 +1,51 @@
+/* Primary font */
+
+%primary-font{
+  font-family: "brandon-grotesque";
+}
+
+$light1: 300;
+$bold1: 700;
+
+body {
+  @extend %primary-font;
+  color: $text-color;    
+  line-height: 1.6;
+  font-weight: $light1;
+  @include small{
+    font-size: 18px;
+  }
+  @include medium{
+    font-size: 24px;
+  }
+}
+strong{
+  font-weight: $bold1;
+}
+
+/* Secondary font */
+
+$light2: 300;
+$bold2: 600;
+
+%secondary-font{
+  font-family: "kulturista-web";
+}
+
+h1, h2, h3, h4, h5, textarea, input{
+  @extend %secondary-font;
+}
+
+h1, h2, h3, h4, h5, .button{
+  font-weight: $bold2;
+}
+
+textarea, input{
+  font-weight: $light2;
+}
+
+/* Fancy font */
+
 @font-face {
   font-family: Sullivan;
   src: url("/fonts/Sullivan-Regular.otf") format("opentype");
@@ -7,32 +55,8 @@
   font-weight: bold;
   src: url("/fonts/Sullivan-Fill.otf") format("opentype");
 }
-%secondary-font{
-  font-family: "kulturista-web";
-  font-weight: 600;
-  color: $text-color;  
-}
 
-h1, h2, h3, h4, h5, .button, textarea, input{
-  @extend %secondary-font;
-}
-
-body {
-  font-family: "brandon-grotesque";
-  color: #2a2924;
-  line-height: 1.6;
-  font-weight: 300;
-  @include small{
-    font-size: 18px;
-  }
-  @include medium{
-    font-size: 24px;
-  }
-}
-
-strong{
-  font-weight: 700;
-}
+$bold3: 800;
 
 .fancy{
   font-family: Sullivan;
@@ -56,7 +80,7 @@ strong{
   }
   span{
     position: relative;
-    font-weight: 800;
+    font-weight: $bold3;
     color: white(0.7);
     z-index: 2;
   }
@@ -76,12 +100,21 @@ strong{
   }
 }
 
-// .dropcap{
-//   float: left;
-//   margin-right: 15px;
-//   font-size: 157px;
-//   margin-top: -3px;
-// }
+/* Links */
+
+a{
+  font-weight: 600;
+  &:link, &:visited, &:active{
+    color: $orange;
+    text-decoration: none;
+  }
+  &:hover{
+    color: $orange;
+    text-decoration: underline;
+  }
+}
+
+/* Other typography styles */
 
 .post-content{
   >p:first-of-type{
@@ -99,17 +132,39 @@ strong{
       margin-bottom: 15px;
     }
   }
-}
-
-
-a{
-  font-weight: 600;
-  &:link, &:visited, &:active{
-    color: $orange;
-    text-decoration: none;
-  }
-  &:hover{
-    color: $orange;
-    text-decoration: underline;
+  a[href~="#twitter"], .twitter-link{
+    font-weight: $light1;
+    background-color: #f8f5d5;
+    padding: 0 8px;
+    // display: inline-block;
+    position: relative;
+    cursor: pointer;
+    @include animate();
+    &, &:link, &:active, &:hover, &:visited{
+      color: $text-color; 
+      text-decoration: none;
+    }
+    &:after{
+      @include animate(width);
+      content: " ";
+      display: inline-block;
+      width: 0px;
+      height: 35px;
+      vertical-align: text-bottom;
+      position: relative;
+      right: -8px;
+      // position: absolute;
+      // right: 0px;
+      // top: 0px;
+      // bottom: 0px;
+      background: #f1ea92 url("/images/twitter2.svg") right 6px center no-repeat;
+      background-size: 20px 20px;
+    }
+    &:hover{
+      background-color: #faf5b7;
+      &:after{
+       width: 32px;
+      }
+    }
   }
 }

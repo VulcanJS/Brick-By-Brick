@@ -4,6 +4,7 @@
   .contents-toc{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .chapter-link{
     display: block;
@@ -19,8 +20,14 @@
       width: 30%;
       width: calc((100% - 60px) / 3);
       margin-right: $spacing;
-      &:nth-child(3n){
+      &:nth-child(3n+1){
         margin-right: 0;
+      }
+      &.chapter-introduction, &.chapter-conclusion{
+        width: 100%;
+        margin-right: 0;
+        // margin-left: calc((100% + 30px) / 3);
+        // margin-right: calc((100% + 30px) / 3);
       }
     }
     .chapter-contents{
@@ -36,7 +43,7 @@
       left: 5px;
       bottom: 5px;
       right: 5px;
-      border: 2px solid $light-beige;
+      border: 3px solid $light-beige;
     }
 
     &:hover{
@@ -66,13 +73,13 @@
     line-height: 1.4;
     color: $orange;
     margin-bottom: 5px;
-    font-weight: 500;
+    font-weight: $bold2;
   }
   .chapter-description{
     display: block;
     color: $text-color;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: $light1;
     margin-bottom: 0;
   }
 }

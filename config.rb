@@ -174,6 +174,11 @@ helpers do
     content = markdown.render(capture(&block))
     concat %Q{<div class="quote"><div class="inner">#{content}</div></div>}
   end
+  def q(quote, name)
+    contributor = data.contributors.select{|c| c.name == name}.first
+    puts contributor.inspect;
+    %Q{<div class="quote"><div class="inner"><p>#{quote}</p><h4>#{name}, <a href="#{contributor.link}">#{contributor.community}</a></h4></div></div>}
+  end
   def homework(&block)
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :fenced_code_blocks => true)
     content = markdown.render(capture(&block))

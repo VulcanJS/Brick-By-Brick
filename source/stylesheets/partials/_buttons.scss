@@ -1,7 +1,8 @@
 .button{
+  @extend %secondary-font;
   display: inline-block;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: $bold2;
   text-align: center;
   padding: 8px 24px;
   text-transform: uppercase;
