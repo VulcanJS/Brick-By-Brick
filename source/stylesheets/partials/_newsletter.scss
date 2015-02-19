@@ -1,0 +1,24 @@
+.section-newsletter{
+  text-align: center;
+}
+.newsletter-form{
+  display: inline-block;
+}
+.newsletter-email-wrapper{
+  @extend %shadow;
+  display: inline-block;
+  @include small{
+    margin-bottom: 10px;
+  }
+}
+.newsletter-email{
+  padding: 6px 10px;
+  font-size: 24px;
+  font-weight: normal;
+  border: none;
+  border: 2px solid $medium-beige;
+}
+.newsletter-submit{
+  @extend .primary-button;
+  display: inline-block;
+}

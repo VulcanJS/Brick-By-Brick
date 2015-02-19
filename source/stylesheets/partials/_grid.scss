@@ -15,7 +15,7 @@ $small-break: 47.5em;
 }
 
 $spacing: 30px;
-$pspacing: $spacing;
+$mspacing: 20px;
 $halfspacing: $spacing/2;
 $doublespacing: $spacing*2;
 
@@ -30,7 +30,7 @@ $grid-padding   : 0px;
 .container{
   @include container;
   @include small{
-    padding:0 5px;
+    padding:0 10px;
   }
   @include medium{
     padding:0 20px;

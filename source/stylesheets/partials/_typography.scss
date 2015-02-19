@@ -19,14 +19,15 @@ h1, h2, h3, h4, h5, .button, textarea, input{
 
 body {
   font-family: "brandon-grotesque";
-  font-size: 24px;
   color: #2a2924;
   line-height: 1.6;
   font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework, .intro-note{
-  margin: 0 0 $pspacing 0;
+  @include small{
+    font-size: 18px;
+  }
+  @include medium{
+    font-size: 24px;
+  }
 }
 
 strong{
@@ -35,7 +36,12 @@ strong{
 
 .fancy{
   font-family: Sullivan;
-  font-size: 120px;
+  @include small{
+    font-size: 70px;
+  }
+  @include medium{
+    font-size: 120px;
+  }
   text-transform: uppercase;
   position: relative;
   line-height: 1;
@@ -79,8 +85,14 @@ strong{
 
 .post-content{
   >p:first-of-type{
-    font-size: 34px;
-    line-height: 1.4;
+    @include small{
+      font-size: 24px;
+      line-height: 1.4;
+    }
+    @include medium{
+      font-size: 34px;
+      line-height: 1.4;
+    }
   }
   ul, ol{
     li{

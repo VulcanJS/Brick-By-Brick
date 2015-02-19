@@ -1,0 +1,23 @@
+.post-nav{
+  @extend %secondary-font;
+  @include cf;
+  .prev, .next{
+    width: 50%;
+    padding: $spacing/2;
+    @extend %striped;
+    &:hover{
+      background-color: $medium-beige;
+      text-decoration: none;
+    }
+  }
+  .prev{
+    float: left;
+    text-align: left;
+    border-right: 1px solid $light-beige;
+  }
+  .next{
+    float: right;
+    text-align: right;
+    border-left: 1px solid $light-beige;
+  }
+}

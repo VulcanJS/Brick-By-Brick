@@ -8,6 +8,11 @@
   }
 }
 
+%striped{
+  background-image: url('/images/stripes-bg.png');
+  background-size: 12px 12px; 
+}
+
 %shadow{
   position: relative;
   &:before{
@@ -19,25 +24,28 @@
     left: 6px;
     height: 100%;
     width: 100%;
-    background: url('/images/stripes-bg.png');
-    background-size: 12px 12px;
+    @extend %striped;
   }
+}
+
+
+h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework, .intro-note, figure{
+  @include small{
+    margin: 0 0 $mspacing 0;
+  }
+  @include medium{
+    margin: 0 0 $spacing 0;
+  }
+}
+
+input, textarea, button{
+  outline-color: $orange;
 }
 
 .note{
   @extend %block;
 }
 
-.homework{
-  background: #fff;
-  @extend %block;
-  h4{
-    margin: -30px;
-    padding: 15px 30px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #ccc;
-  }
-}
 
 .tweet{
   background: #fff;
@@ -54,7 +62,7 @@ section{
 .section-title{
   overflow: hidden;
   text-align: center;
-  margin-bottom: $pspacing;
+  margin-bottom: $spacing;
   .inner{
     @extend .fancy;
     line-height: 0.72;
@@ -89,38 +97,6 @@ section{
   font-weight: 300;
 }
 
-.quote{
-  background: url('/images/stripes-bg.png');
-  background-size: 12px 12px;
-  padding: 15px 15px 60px 15px;
-  font-style: italic;
-  .inner{
-    padding: 20px 30px;
-    background: $lighter-beige;
-    position: relative;
-    &:after{
-      content: " ";
-      height: 0;
-      width: 0;
-      top: 100%;
-      right: 40%;
-      position: absolute;      
-      border-style: solid;
-      border-width: 0 15px 15px 0;
-      border-color: transparent $lighter-beige transparent transparent;
-    }
-  }
-  p{
-    margin-bottom: 0px;
-  }
-  h4{
-    margin: 0 -30px -28px 0;
-    top: 32px;
-    font-size: 18px;
-    text-align: right;
-    position: relative;
-  }
-}
 
 .avatar{
   border-radius: 100%;

@@ -2,14 +2,34 @@
   display: inline-block;
   font-size: 24px;
   font-weight: 600;
-  border-radius: 5px;
   text-align: center;
   padding: 8px 24px;
   text-transform: uppercase;
+  position: relative;
+  @extend %shadow;
+  &:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top:3px;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    border: 2px solid white(0.8);
+  }
+  &:active{
+    outline: none;
+    top: 1px;
+    &:before{
+      top: 5px;
+    }
+  }
 }
 
-.download-button{
+.primary-button{
   background: $orange;
+  border: none;
+  cursor: pointer;
   &, &:link, &:visited, &:active{
     color: white;
   }
@@ -19,11 +39,17 @@
   }
 }
 
+.download-button{
+  @extend .primary-button;
+}
+
 .share-button{
-  // background: $medium-beige;
-  border-radius: 5px;
+  background: $lighter-beige;
   padding: 8px 24px;
   display: block;
+  &:after{
+    border-color: $light-beige;
+  }
   &:hover{
     text-decoration: none;
     background: $orange;
@@ -39,11 +65,11 @@
   border: 2px solid $medium-beige;
   img, .svg{
     display: inline-block;
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
     vertical-align: middle;
-    margin-right: 5px;
-    margin-top:-2px;
+    margin-right: 2px;
+    margin-top:-4px;
     path{
       fill: $orange;
     }

@@ -1,0 +1,51 @@
+$thickness: 2px;
+$color: $medium-beige;
+
+.homework{
+  // background: white(0.5);
+  position: relative;
+  margin: 0 -10px $spacing*2 -10px;
+  border-top: $thickness dashed $color;
+  border-bottom: $thickness dashed $color;
+  &:after, &:before{
+    top: -10px;
+    display: block;
+    content: " ";
+    position: absolute;
+    height: calc( 100% + 20px );
+    width: 0px;
+    z-index: 100;   
+  }
+  &:before{
+    left: 10px;
+    border-left: $thickness dashed $color;
+  }
+  &:after{
+    right: 10px;
+    border-right: $thickness dashed $color;
+  }
+  h4{
+    padding: $spacing/2 $spacing;
+    margin: 0 10px;
+    position: relative;
+    background: url('/images/stripes-bg.png');
+    background-size: 12px 12px;
+    &:after{
+      display: block;
+      content: " ";
+      position: absolute;
+      width: calc( 100% + 20px);
+      height: 0px;
+      border-bottom: $thickness dashed $color;
+      left: -10px;
+      bottom: 0px;
+      z-index: 100;
+    }
+  }
+  ul{
+    // background: $lighter-beige;
+    padding: $spacing $spacing*2;
+    margin: 0 10px;
+    // @extend %shadow;
+  }
+}

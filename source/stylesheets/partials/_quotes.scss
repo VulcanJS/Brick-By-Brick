@@ -1,0 +1,40 @@
+
+.quote{
+  background: url('/images/stripes-bg.png');
+  background-size: 12px 12px;
+  padding: 15px 15px 60px 15px;
+  font-style: italic;
+  .inner{
+    padding: 20px 30px;
+    background: $lighter-beige;
+    text-align: right;
+  }
+  p{
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  h4{
+    margin: 0 -30px 0 0;
+    top: 32px;
+    @include small{
+      font-size: 16px;
+    }
+    @include medium{
+      font-size: 18px;
+    }
+    float: right;
+    position: relative;
+    white-space: nowrap;
+    &:after{
+      content: " ";
+      height: 0;
+      width: 0;
+      top: -12px;
+      left: -28px;
+      position: absolute;      
+      border-style: solid;
+      border-width: 0 15px 15px 0;
+      border-color: transparent $lighter-beige transparent transparent;
+    }
+  }
+}

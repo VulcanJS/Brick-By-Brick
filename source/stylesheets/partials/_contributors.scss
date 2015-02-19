@@ -5,7 +5,10 @@
 }
 
 .contributor{
-  margin-bottom: $pspacing;
+  margin-bottom: $spacing;
+  @include small{
+    width: 100%;
+  }
   @include medium{
     width: 22%;
     margin-right: 4%;
@@ -18,7 +21,12 @@
 .contributor-image{
   display: block;
   line-height: 1;
-  width: 80%;
+  @include small{
+    width: 50%;
+  }
+  @include medium{
+    width: 80%;
+  }
   margin: 0 auto;
   img{
     @extend .avatar;
