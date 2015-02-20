@@ -1,0 +1,15 @@
+
+- blog('chapters').articles.sort_by! {|chapter| chapter.metadata[:page]["date"]}.each_with_index do |chapter, i|
+  %section.chapter-print
+
+    .page-image
+      .image-wrapper
+        %img.chapter-icon.svg{src: "/images/"+chapter.data.icon}
+
+    .page-title.section-title
+      %h1.inner{'data-content' => chapter.data.title}
+        %span=chapter.data.title
+
+    .post-content
+      =find_and_preserve do
+        =chapter.body

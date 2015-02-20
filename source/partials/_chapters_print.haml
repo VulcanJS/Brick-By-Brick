@@ -1,0 +1,11 @@
+
+%section.section-chapters-print
+  .section-title
+    %h2.inner{'data-content' => 'Contents'}
+      %span Contents
+
+  %ul.chapters-toc
+    - blog('chapters').articles.sort_by! {|chapter| chapter.metadata[:page]["date"]}.each_with_index do |chapter, i|
+      %li.chapter-contents
+        %h3.chapter-title=chapter.data.title
+        %p.chapter-description=chapter.data.description

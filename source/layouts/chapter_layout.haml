@@ -1,0 +1,31 @@
+- content_for(:title, "#{current_article.title} - Telescope")
+- content_for(:layout, "post")
+- content_for(:itemtype, "Article")
+
+= wrap_layout :layout do
+
+  .page-image
+    .image-wrapper
+      %img.chapter-icon.svg{src: "/images/"+current_article.data.icon}
+
+  .page-title.section-title
+    %h1.inner{'data-content' => current_article.data.title}
+      %span=current_article.data.title
+  
+  .post-content
+    =find_and_preserve do
+      =yield
+
+  .post-nav
+
+    - prev_article = current_article.previous_article
+    - if prev_article
+      %a.prev{:href => "#{prev_article.url}", :title => "Previous Post: #{prev_article.title}"}
+        «
+        =prev_article.title
+
+    - next_article = current_article.next_article
+    - if next_article
+      %a.next{:href => "#{next_article.url}", :title => "next Post: #{next_article.title}"}
+        =next_article.title
+        »

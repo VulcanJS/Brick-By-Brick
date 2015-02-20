@@ -1,0 +1,24 @@
+%section.section-share
+  .section-title
+    %h2.inner{'data-content' => 'Share'}
+      %span Share
+
+  %h3.section-subtitle Help Us Get The Word Out
+
+
+  .share-widget
+    .tweet-field
+      %textarea.tweet-content The Community Building Guide, a free guide by @telescopeapp http://communitybuildingguide.com #combuild
+      %span.tweet-counter
+    %a.tweet-button.tweet-link.share-button.button{:href => "#", :target => "_blank"}
+      %img.svg{:alt => "Share on Twitter", :src => "/images/twitter.svg"}/
+      %span Tweet This
+
+    .share-buttons
+      %span.or or
+      %a.facebook-button.share-button.button{:href => "https://www.facebook.com/sharer/sharer.php?u=http://book.discovermeteor.com/starter", :target => "_blank"}
+        %img.svg{:alt => "Share on Facebook", :src => "/images/facebook-square.svg"}/
+        %span Share on Facebook
+      %a.gplus-button.share-button.button{:href => "https://plus.google.com/share?url=http://book.discovermeteor.com/starter", :target => "_blank"}
+        %img.svg{:alt => "Share on Google+", :src => "/images/googleplus-square.svg"}/
+        %span Share on Google+

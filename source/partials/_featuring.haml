@@ -1,0 +1,16 @@
+%section.section-contributors
+
+  .section-title
+    %h2.inner{'data-content' => 'Featuring'}
+      %span Featuring
+
+  %h3.section-subtitle With Wisdom From These Fine Folks:
+
+  .contributors
+    - data.contributors.each_with_index do |contributor, i|
+      .contributor
+        %a.contributor-image{href: contributor.link}
+          %img{src: "/images/contributors/"+contributor.image}
+        %h4.contributor-name=contributor.name
+        %h5.contributor-community
+          %a{href: contributor.link}=contributor.community

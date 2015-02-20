@@ -1,0 +1,14 @@
+%section.section-chapters
+  .section-title
+    %h2.inner{'data-content' => 'Contents'}
+      %span Contents
+
+  %h3.section-subtitle The Part You've Been Waiting For
+
+  .chapters-toc
+    - blog('chapters').articles.sort_by! {|chapter| chapter.metadata[:page]["date"]}.each_with_index do |chapter, i|
+      %a.chapter-link{href: chapter.url, class: 'chapter-'+chapter.data.title.downcase}
+        .chapter-contents
+          %img.chapter-icon.svg{src: "/images/"+chapter.data.icon}
+          %h3.chapter-title=chapter.data.title
+          %p.chapter-description=chapter.data.description

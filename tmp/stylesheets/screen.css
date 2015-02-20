@@ -1,0 +1,897 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*================ FUNCTIONS =================*/
+/*================ VARIABLES =================*/
+/*================ CLASSES =================*/
+/* line 35, /Users/sacha/Dev/combuild/source/stylesheets/partials/_mixins.scss */
+.cf {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1; }
+  /* line 3, /Users/sacha/Dev/combuild/source/stylesheets/partials/_mixins.scss */
+  .cf:before, .cf:after {
+    content: "";
+    display: table; }
+  /* line 7, /Users/sacha/Dev/combuild/source/stylesheets/partials/_mixins.scss */
+  .cf:after {
+    clear: both; }
+
+/*================ MIXINS =================*/
+/* line 14, /Users/sacha/.rvm/gems/ruby-2.1.5/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 30, /Users/sacha/Dev/combuild/source/stylesheets/partials/_grid.scss */
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, /Users/sacha/.rvm/gems/ruby-2.1.5/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media screen and (max-width: 47.5em) {
+    /* line 30, /Users/sacha/Dev/combuild/source/stylesheets/partials/_grid.scss */
+    .container {
+      padding: 0 10px; } }
+  @media screen and (min-width: 47.5em) {
+    /* line 30, /Users/sacha/Dev/combuild/source/stylesheets/partials/_grid.scss */
+    .container {
+      padding: 0 20px;
+      width: 900px;
+      margin: 0 auto; } }
+
+/* line 42, /Users/sacha/Dev/combuild/source/stylesheets/partials/_grid.scss */
+.row {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, /Users/sacha/.rvm/gems/ruby-2.1.5/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  .row:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+/* Primary font */
+/* line 4, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+body {
+  font-family: "brandon-grotesque"; }
+
+/* line 11, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+body {
+  color: #605e58;
+  line-height: 1.6;
+  font-weight: 300; }
+  @media screen and (max-width: 47.5em) {
+    /* line 11, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+    body {
+      font-size: 18px; } }
+  @media screen and (min-width: 47.5em) {
+    /* line 11, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+    body {
+      font-size: 24px; } }
+
+/* line 23, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+strong {
+  font-weight: 700; }
+
+/* Secondary font */
+/* line 32, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+h1, h2, h3, h4, h5, textarea, input, .button, .share-widget .or, .post-nav {
+  font-family: "kulturista-web"; }
+
+/* line 40, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+h1, h2, h3, h4, h5, .button {
+  font-weight: 600; }
+
+/* line 44, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+textarea, input {
+  font-weight: 300; }
+
+/* Fancy font */
+@font-face {
+  font-family: Sullivan;
+  src: url("/fonts/Sullivan-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: Sullivan;
+  font-weight: bold;
+  src: url("/fonts/Sullivan-Fill.otf") format("opentype"); }
+/* line 62, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+.fancy, .section-title .inner {
+  font-family: Sullivan;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 1;
+  display: block;
+  text-align: center; }
+  @media screen and (max-width: 47.5em) {
+    /* line 62, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+    .fancy, .section-title .inner {
+      font-size: 70px; } }
+  @media screen and (min-width: 47.5em) {
+    /* line 62, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+    .fancy, .section-title .inner {
+      font-size: 120px; } }
+  /* line 75, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  .fancy span, .section-title .inner span, .fancy:after, .section-title .inner:after, .fancy:before, .section-title .inner:before {
+    display: block;
+    content: attr(data-content);
+    top: 0px;
+    left: 0px;
+    width: 100%; }
+  /* line 82, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  .fancy span, .section-title .inner span {
+    position: relative;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 2; }
+  /* line 88, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  .fancy:after, .section-title .inner:after {
+    position: absolute;
+    font-weight: 100;
+    color: #f49206;
+    z-index: 3; }
+  /* line 94, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  .fancy:before, .section-title .inner:before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-weight: 800;
+    color: #dbd3c6;
+    z-index: 1; }
+
+/* Links */
+/* line 106, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+a {
+  font-weight: 600; }
+  /* line 108, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  a:link, a:visited, a:active {
+    color: #f49206;
+    text-decoration: none; }
+  /* line 112, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  a:hover {
+    color: #f49206;
+    text-decoration: underline; }
+
+/* Other typography styles */
+@media screen and (max-width: 47.5em) {
+  /* line 121, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  .post-content > p:first-of-type {
+    font-size: 24px;
+    line-height: 1.4; } }
+@media screen and (min-width: 47.5em) {
+  /* line 121, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  .post-content > p:first-of-type {
+    font-size: 34px;
+    line-height: 1.4; } }
+/* line 132, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+.post-content ul li, .post-content ol li {
+  margin-bottom: 15px; }
+/* line 136, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+.post-content a[href~="#twitter"], .post-content .twitter-link {
+  font-weight: 300;
+  background-color: #f8f5d5;
+  padding: 0 8px;
+  position: relative;
+  cursor: pointer;
+  -moz-transition: all 300ms ease-out 0ms;
+  -o-transition: all 300ms ease-out 0ms;
+  -webkit-transition: all 300ms ease-out;
+  -webkit-transition-delay: 0ms;
+  transition: all 300ms ease-out 0ms; }
+  /* line 144, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  .post-content a[href~="#twitter"], .post-content a[href~="#twitter"]:link, .post-content a[href~="#twitter"]:active, .post-content a[href~="#twitter"]:hover, .post-content a[href~="#twitter"]:visited, .post-content .twitter-link, .post-content .twitter-link:link, .post-content .twitter-link:active, .post-content .twitter-link:hover, .post-content .twitter-link:visited {
+    color: #605e58;
+    text-decoration: none; }
+  /* line 148, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  .post-content a[href~="#twitter"]:after, .post-content .twitter-link:after {
+    -moz-transition: width 300ms ease-out 0ms;
+    -o-transition: width 300ms ease-out 0ms;
+    -webkit-transition: width 300ms ease-out;
+    -webkit-transition-delay: 0ms;
+    transition: width 300ms ease-out 0ms;
+    content: " ";
+    display: inline-block;
+    width: 0px;
+    height: 35px;
+    vertical-align: text-bottom;
+    position: relative;
+    right: -8px;
+    background: #f1ea92 url("/images/twitter2.svg") right 6px center no-repeat;
+    background-size: 20px 20px; }
+  /* line 164, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+  .post-content a[href~="#twitter"]:hover, .post-content .twitter-link:hover {
+    background-color: #faf5b7; }
+    /* line 166, /Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss */
+    .post-content a[href~="#twitter"]:hover:after, .post-content .twitter-link:hover:after {
+      width: 32px; }
+
+/* line 1, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+.button {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 24px;
+  text-transform: uppercase;
+  position: relative; }
+  /* line 11, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+  .button:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    border: 2px solid rgba(255, 255, 255, 0.8); }
+  /* line 21, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+  .button:active {
+    outline: none;
+    top: 1px; }
+    /* line 24, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+    .button:active:before {
+      top: 5px; }
+
+/* line 30, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+.primary-button, .download-button, .newsletter-submit {
+  background: #f49206;
+  border: none;
+  cursor: pointer; }
+  /* line 34, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+  .primary-button, .download-button, .newsletter-submit, .primary-button:link, .download-button:link, .newsletter-submit:link, .primary-button:visited, .download-button:visited, .newsletter-submit:visited, .primary-button:active, .download-button:active, .newsletter-submit:active {
+    color: white; }
+  /* line 37, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+  .primary-button:hover, .download-button:hover, .newsletter-submit:hover {
+    background: #605e58;
+    text-decoration: none; }
+
+/* line 47, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+.share-button {
+  background: #f9f7ee;
+  padding: 8px 24px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  border: 2px solid #dbd3c6; }
+  /* line 51, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+  .share-button:after {
+    border-color: #F0EDDC; }
+  /* line 54, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+  .share-button:hover {
+    text-decoration: none;
+    background: #f49206;
+    color: white;
+    border-color: #f49206; }
+    /* line 59, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+    .share-button:hover svg path {
+      fill: white; }
+  /* line 67, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+  .share-button img, .share-button .svg {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 2px;
+    margin-top: -4px; }
+    /* line 74, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+    .share-button img path, .share-button .svg path {
+      fill: #f49206; }
+  /* line 78, /Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss */
+  .share-button span {
+    white-space: nowrap; }
+
+/* line 1, /Users/sacha/Dev/combuild/source/stylesheets/partials/_main.scss */
+body {
+  background: url("/images/bg.jpg");
+  padding: 0;
+  margin: 0; }
+
+/* line 7, /Users/sacha/Dev/combuild/source/stylesheets/partials/_main.scss */
+header {
+  text-align: center;
+  padding: 120px 0;
+  margin-bottom: 60px;
+  border-bottom: 2px solid #605e58; }
+  /* line 12, /Users/sacha/Dev/combuild/source/stylesheets/partials/_main.scss */
+  header.large {
+    background: url("/images/city-bg.jpg") 0 0 repeat-x;
+    background: url("/images/bg-header-city3.png") center 100% no-repeat;
+    background-size: 90%; }
+  /* line 17, /Users/sacha/Dev/combuild/source/stylesheets/partials/_main.scss */
+  header a {
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden; }
+
+/* line 22, /Users/sacha/Dev/combuild/source/stylesheets/partials/_main.scss */
+footer {
+  padding: 225px 0 15px 0;
+  text-align: center;
+  background: url("/images/city-bg-alt.jpg") 0 0 repeat-x;
+  background-size: contain; }
+  /* line 27, /Users/sacha/Dev/combuild/source/stylesheets/partials/_main.scss */
+  footer p {
+    margin-bottom: 0; }
+
+/* line 2, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+.telescope-note {
+  background: #f9f7ee; }
+
+@media screen and (min-width: 47.5em) {
+  /* line 8, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+  .telescope-description {
+    font-size: 20px;
+    margin-right: 290px; } }
+
+/* line 14, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+.telescope-screenshot {
+  text-align: center; }
+  @media screen and (max-width: 47.5em) {
+    /* line 14, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+    .telescope-screenshot {
+      margin-bottom: 20px; } }
+  @media screen and (min-width: 47.5em) {
+    /* line 14, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+    .telescope-screenshot {
+      width: 260px;
+      float: right; } }
+  /* line 23, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+  .telescope-screenshot a {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); }
+  /* line 26, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+  .telescope-screenshot img, .telescope-screenshot a {
+    display: block;
+    width: 100%; }
+  /* line 30, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+  .telescope-screenshot .screenshot-legend {
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    line-height: 1.4;
+    font-weight: 300; }
+
+/* line 39, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+.section-download {
+  text-align: center; }
+
+/* line 43, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+.share-widget {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  text-align: center; }
+  /* line 48, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+  .share-widget .or {
+    font-size: 18px;
+    margin: 5px 0 10px 0;
+    display: block; }
+
+/* line 55, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+.tweet-field {
+  border: 1px solid #dbd3c6;
+  margin-bottom: 15px;
+  position: relative; }
+  /* line 60, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+  .tweet-field textarea {
+    border: none;
+    padding: 15px;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    min-height: 140px;
+    font-weight: 300;
+    line-height: 1.6; }
+  /* line 70, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+  .tweet-field .tweet-counter {
+    position: absolute;
+    display: block;
+    right: 8px;
+    bottom: 8px;
+    font-size: 14px; }
+    /* line 76, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+    .tweet-field .tweet-counter.danger {
+      color: #DD4A54; }
+
+/* line 81, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+.tweet-button {
+  width: 100%;
+  display: block; }
+
+/* line 85, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+.facebook-button {
+  margin-bottom: 15px; }
+
+/* line 89, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+.author {
+  overflow: hidden; }
+
+/* line 92, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+.author-photo {
+  text-align: center;
+  margin-bottom: 30px; }
+  @media screen and (min-width: 47.5em) {
+    /* line 92, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+    .author-photo {
+      float: left;
+      margin-right: 30px; } }
+
+/* line 100, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+.author-image {
+  width: 180px;
+  margin: 0 auto;
+  display: block;
+  line-height: 1; }
+
+@media screen and (min-width: 47.5em) {
+  /* line 109, /Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss */
+  .author-bio {
+    margin-left: 210px;
+    font-size: 22px; } }
+
+/* line 1, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+.telescope-note, .note {
+  padding: 20px; }
+  /* line 3, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+  .telescope-note h1, .note h1, .telescope-note h2, .note h2, .telescope-note h3, .note h3, .telescope-note h4, .note h4, .telescope-note h5, .note h5, .telescope-note ul, .note ul, .telescope-note ol, .note ol, .telescope-note p, .note p {
+    margin-bottom: 15px; }
+  /* line 6, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+  .telescope-note *:last-child, .note *:last-child {
+    margin-bottom: 0; }
+
+/* line 11, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+.button:before, .telescope-note:before, .tweet-field:before, .newsletter-email-wrapper:before, .section-chapters .chapter-link:before, figure, .homework h4, .post-nav .prev, .post-nav .next {
+  background-image: url("/images/stripes-bg.png");
+  background-size: 12px 12px; }
+
+/* line 16, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+.button, .telescope-note, .tweet-field, .newsletter-email-wrapper, .section-chapters .chapter-link {
+  position: relative; }
+  /* line 18, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+  .button:before, .telescope-note:before, .tweet-field:before, .newsletter-email-wrapper:before, .section-chapters .chapter-link:before {
+    position: absolute;
+    display: block;
+    content: " ";
+    z-index: -10;
+    top: 6px;
+    left: 6px;
+    height: 100%;
+    width: 100%; }
+
+@media screen and (max-width: 47.5em) {
+  /* line 32, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+  h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework, .intro-note, figure {
+    margin: 0 0 20px 0; } }
+@media screen and (min-width: 47.5em) {
+  /* line 32, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+  h1, h2, h3, h4, h5, p, ol, ul, .note, .quote, .homework, .intro-note, figure {
+    margin: 0 0 30px 0; } }
+
+/* line 41, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+input, textarea, button {
+  outline-color: #f49206; }
+
+/* line 50, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+.tweet {
+  background: #fff; }
+
+/* line 54, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+.page-title {
+  text-align: center; }
+
+/* line 58, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+section {
+  margin-bottom: 60px; }
+
+/* line 62, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+.section-title {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 30px; }
+  /* line 66, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+  .section-title .inner {
+    line-height: 0.72;
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative; }
+  /* line 73, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+  .section-title span {
+    padding: 0 20px; }
+    /* line 75, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+    .section-title span:before, .section-title span:after {
+      background: url("/images/stripes-bg.png");
+      background-size: 12px 12px;
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      width: 800px; }
+    /* line 86, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+    .section-title span:before {
+      right: 100%; }
+    /* line 89, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+    .section-title span:after {
+      left: 100%; }
+
+/* line 95, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+.section-subtitle {
+  text-align: center;
+  font-weight: 300; }
+
+/* line 101, /Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss */
+.avatar, .author-image img, .contributor-image img {
+  border-radius: 100%;
+  max-width: 200px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border: 4px solid #dbd3c6; }
+
+/* line 1, /Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss */
+figure {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 47.5em) {
+    /* line 1, /Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss */
+    figure {
+      width: 75%; }
+      /* line 10, /Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss */
+      figure.shrink {
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content; }
+        /* line 14, /Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss */
+        figure.shrink img {
+          width: auto; }
+      /* line 18, /Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss */
+      figure.pull-left {
+        float: left;
+        margin: 0 30px 0 -120px; }
+      /* line 22, /Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss */
+      figure.pull-right {
+        float: right;
+        margin: 0 -120px 0 30px;
+        width: 40%; } }
+  /* line 29, /Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss */
+  figure.no-border img {
+    border: none; }
+  /* line 34, /Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss */
+  figure.shadow img {
+    border-radius: 3px;
+    -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15); }
+  /* line 39, /Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss */
+  figure img {
+    display: block;
+    width: 100%; }
+
+/* line 45, /Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss */
+figcaption {
+  margin-top: 10px;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center; }
+
+/* line 1, /Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss */
+.contributors {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 7, /Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss */
+.contributor {
+  margin-bottom: 30px; }
+  @media screen and (max-width: 47.5em) {
+    /* line 7, /Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss */
+    .contributor {
+      width: 100%; } }
+  @media screen and (min-width: 47.5em) {
+    /* line 7, /Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss */
+    .contributor {
+      width: 22%;
+      margin-right: 4%; }
+      /* line 15, /Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss */
+      .contributor:nth-of-type(4n) {
+        margin-right: 0; } }
+
+/* line 21, /Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss */
+.contributor-image {
+  display: block;
+  line-height: 1;
+  margin: 0 auto; }
+  @media screen and (max-width: 47.5em) {
+    /* line 21, /Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss */
+    .contributor-image {
+      width: 50%; } }
+  @media screen and (min-width: 47.5em) {
+    /* line 21, /Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss */
+    .contributor-image {
+      width: 80%; } }
+
+/* line 36, /Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss */
+.contributor-name {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 300; }
+
+/* line 42, /Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss */
+.contributor-community {
+  margin-bottom: 0;
+  font-size: 14px; }
+
+/* line 4, /Users/sacha/Dev/combuild/source/stylesheets/partials/_homework.scss */
+.homework {
+  position: relative;
+  margin: 0 -10px 60px -10px;
+  border-top: 2px dashed #dbd3c6;
+  border-bottom: 2px dashed #dbd3c6; }
+  /* line 10, /Users/sacha/Dev/combuild/source/stylesheets/partials/_homework.scss */
+  .homework:after, .homework:before {
+    top: -10px;
+    display: block;
+    content: " ";
+    position: absolute;
+    height: calc( 100% + 20px );
+    width: 0px;
+    z-index: 100; }
+  /* line 19, /Users/sacha/Dev/combuild/source/stylesheets/partials/_homework.scss */
+  .homework:before {
+    left: 10px;
+    border-left: 2px dashed #dbd3c6; }
+  /* line 23, /Users/sacha/Dev/combuild/source/stylesheets/partials/_homework.scss */
+  .homework:after {
+    right: 10px;
+    border-right: 2px dashed #dbd3c6; }
+  /* line 27, /Users/sacha/Dev/combuild/source/stylesheets/partials/_homework.scss */
+  .homework h4 {
+    padding: 15px 30px;
+    margin: 0 10px;
+    position: relative;
+    background-color: #f9f7ee; }
+    /* line 33, /Users/sacha/Dev/combuild/source/stylesheets/partials/_homework.scss */
+    .homework h4:after {
+      display: block;
+      content: " ";
+      position: absolute;
+      width: calc( 100% + 20px);
+      height: 0px;
+      border-bottom: 2px dashed #dbd3c6;
+      left: -10px;
+      bottom: 0px;
+      z-index: 100; }
+  /* line 45, /Users/sacha/Dev/combuild/source/stylesheets/partials/_homework.scss */
+  .homework ul {
+    background: #f9f7ee;
+    padding: 30px 60px;
+    margin: 0 10px; }
+
+/* line 2, /Users/sacha/Dev/combuild/source/stylesheets/partials/_quotes.scss */
+.quote {
+  background: url("/images/stripes-bg.png");
+  background-size: 12px 12px;
+  padding: 15px 15px 60px 15px;
+  font-style: italic; }
+  /* line 7, /Users/sacha/Dev/combuild/source/stylesheets/partials/_quotes.scss */
+  .quote .inner {
+    padding: 20px 30px;
+    background: #f9f7ee;
+    text-align: right; }
+  /* line 12, /Users/sacha/Dev/combuild/source/stylesheets/partials/_quotes.scss */
+  .quote p {
+    text-align: left;
+    margin-bottom: 0px; }
+  /* line 16, /Users/sacha/Dev/combuild/source/stylesheets/partials/_quotes.scss */
+  .quote h4 {
+    margin: 0 -30px 0 0;
+    top: 32px;
+    float: right;
+    position: relative;
+    white-space: nowrap; }
+    @media screen and (max-width: 47.5em) {
+      /* line 16, /Users/sacha/Dev/combuild/source/stylesheets/partials/_quotes.scss */
+      .quote h4 {
+        font-size: 16px; } }
+    @media screen and (min-width: 47.5em) {
+      /* line 16, /Users/sacha/Dev/combuild/source/stylesheets/partials/_quotes.scss */
+      .quote h4 {
+        font-size: 18px; } }
+    /* line 28, /Users/sacha/Dev/combuild/source/stylesheets/partials/_quotes.scss */
+    .quote h4:after {
+      content: " ";
+      height: 0;
+      width: 0;
+      top: -12px;
+      left: -28px;
+      position: absolute;
+      border-style: solid;
+      border-width: 0 15px 15px 0;
+      border-color: transparent #f9f7ee transparent transparent; }
+
+/* line 1, /Users/sacha/Dev/combuild/source/stylesheets/partials/_nav.scss */
+.post-nav {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1; }
+  /* line 3, /Users/sacha/Dev/combuild/source/stylesheets/partials/_mixins.scss */
+  .post-nav:before, .post-nav:after {
+    content: "";
+    display: table; }
+  /* line 7, /Users/sacha/Dev/combuild/source/stylesheets/partials/_mixins.scss */
+  .post-nav:after {
+    clear: both; }
+  /* line 4, /Users/sacha/Dev/combuild/source/stylesheets/partials/_nav.scss */
+  .post-nav .prev, .post-nav .next {
+    width: 50%;
+    padding: 15px; }
+    /* line 8, /Users/sacha/Dev/combuild/source/stylesheets/partials/_nav.scss */
+    .post-nav .prev:hover, .post-nav .next:hover {
+      background-color: #dbd3c6;
+      text-decoration: none; }
+  /* line 13, /Users/sacha/Dev/combuild/source/stylesheets/partials/_nav.scss */
+  .post-nav .prev {
+    float: left;
+    text-align: left;
+    border-right: 1px solid #F0EDDC; }
+  /* line 18, /Users/sacha/Dev/combuild/source/stylesheets/partials/_nav.scss */
+  .post-nav .next {
+    float: right;
+    text-align: right;
+    border-left: 1px solid #F0EDDC; }
+
+/* line 1, /Users/sacha/Dev/combuild/source/stylesheets/partials/_newsletter.scss */
+.section-newsletter {
+  text-align: center; }
+
+/* line 4, /Users/sacha/Dev/combuild/source/stylesheets/partials/_newsletter.scss */
+.newsletter-form {
+  display: inline-block; }
+
+/* line 7, /Users/sacha/Dev/combuild/source/stylesheets/partials/_newsletter.scss */
+.newsletter-email-wrapper {
+  display: inline-block; }
+  @media screen and (max-width: 47.5em) {
+    /* line 7, /Users/sacha/Dev/combuild/source/stylesheets/partials/_newsletter.scss */
+    .newsletter-email-wrapper {
+      margin-bottom: 10px; } }
+
+/* line 14, /Users/sacha/Dev/combuild/source/stylesheets/partials/_newsletter.scss */
+.newsletter-email {
+  padding: 6px 10px;
+  font-size: 24px;
+  font-weight: 300;
+  border: none;
+  border: 2px solid #dbd3c6; }
+
+/* line 21, /Users/sacha/Dev/combuild/source/stylesheets/partials/_newsletter.scss */
+.newsletter-submit {
+  display: inline-block; }
+
+/* line 1, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+.section-chapters .chapter-link {
+  display: block;
+  background: white; }
+  /* line 5, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+  .section-chapters .chapter-link:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: 3px solid #F0EDDC; }
+
+/* line 17, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+.section-chapters {
+  text-align: center; }
+  /* line 19, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+  .section-chapters .chapters-toc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /* line 24, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+  .section-chapters .chapter-link {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 30px; }
+    @media screen and (max-width: 47.5em) {
+      /* line 24, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+      .section-chapters .chapter-link {
+        width: 100%; } }
+    @media screen and (min-width: 47.5em) {
+      /* line 24, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+      .section-chapters .chapter-link {
+        width: 30%;
+        width: calc((100% - 60px) / 3);
+        margin-right: 30px; }
+        /* line 37, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+        .section-chapters .chapter-link:nth-child(3n+1) {
+          margin-right: 0; }
+        /* line 40, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+        .section-chapters .chapter-link.chapter-introduction, .section-chapters .chapter-link.chapter-conclusion {
+          width: 100%;
+          margin-right: 0; } }
+    /* line 47, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+    .section-chapters .chapter-link .chapter-contents {
+      z-index: 0;
+      position: relative; }
+    /* line 53, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+    .section-chapters .chapter-link:hover {
+      text-decoration: none; }
+      /* line 55, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+      .section-chapters .chapter-link:hover:before {
+        background-color: #dbd3c6; }
+      /* line 58, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+      .section-chapters .chapter-link:hover:after {
+        border-color: #f49206; }
+      /* line 61, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+      .section-chapters .chapter-link:hover .chapter-icon * {
+        stroke: #f49206; }
+
+/* line 69, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+.chapter-icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px auto; }
+  /* line 74, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+  .chapter-icon * {
+    stroke: #605e58; }
+
+/* line 78, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+.chapter-title {
+  display: block;
+  line-height: 1.4;
+  color: #f49206;
+  margin-bottom: 5px;
+  font-weight: 600; }
+
+/* line 85, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+.chapter-description {
+  display: block;
+  color: #605e58;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 0; }
+
+/* line 93, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+.page-image {
+  margin-bottom: 30px;
+  overflow: hidden; }
+  /* line 96, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+  .page-image .image-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 3px solid #dbd3c6;
+    position: relative; }
+    /* line 104, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+    .page-image .image-wrapper:after, .page-image .image-wrapper:before {
+      display: block;
+      content: " ";
+      border-bottom: 3px solid #dbd3c6;
+      position: absolute;
+      top: 50%;
+      width: 900px; }
+    /* line 112, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+    .page-image .image-wrapper:after {
+      right: 100%; }
+    /* line 115, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+    .page-image .image-wrapper:before {
+      left: 100%; }
+  /* line 119, /Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss */
+  .page-image .chapter-icon {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }

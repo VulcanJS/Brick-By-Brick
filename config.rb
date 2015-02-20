@@ -5,13 +5,13 @@
 Time.zone = "Tokyo"
 
 activate :blog do |blog|
-  blog.name = "sections"
+  blog.name = "chapters"
   # blog.prefix = "docs"
-  blog.sources = "sections/:title.html"
-  blog.permalink = "section/:title"
+  blog.sources = "chapters/:title.html"
+  blog.permalink = "chapters/:title"
   # blog.sources = ":year-:month-:day-:title.html"
   # blog.taglink = "tags/:tag.html"
-  blog.layout = "section_layout"
+  blog.layout = "chapter_layout"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = ":year.html"
@@ -29,7 +29,7 @@ end
 # end
 
 
-page "ebook", :layout => :section_layout
+page "/print.html", :layout => :print_layout
 
 ### 
 # Compass
@@ -176,7 +176,6 @@ helpers do
   end
   def q(quote, name)
     contributor = data.contributors.select{|c| c.name == name}.first
-    puts contributor.inspect;
     %Q{<div class="quote"><div class="inner"><p>#{quote}</p><h4>#{name}, <a href="#{contributor.link}">#{contributor.community}</a></h4></div></div>}
   end
   def homework(&block)

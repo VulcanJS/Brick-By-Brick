@@ -1,3 +1,11 @@
+- name: Ryan Hoover
+  image: ryanhoover.jpg
+  community: "Prodct Hunt"
+  link: http://producthunt.com
+- name: Justin Kan
+  image: justinkan.jpg
+  community: "The Drop"
+  link: http://thedrop.club
 - name: Pieter Levels
   image: levels.jpg
   community: "#Nomads"

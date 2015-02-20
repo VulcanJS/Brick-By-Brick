@@ -1,3 +1,32 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+@import "susy";
+
+@import "partials/mixins";
+@import "partials/colors";
+@import "partials/grid";
+@import "partials/typography";
+@import "partials/buttons";
+
+@import "partials/main";
+@import "partials/home";
+@import "partials/elements";
+@import "partials/figures";
+@import "partials/contributors";
+@import "partials/homework";
+@import "partials/quotes";
+@import "partials/nav";
+@import "partials/newsletter";
+@import "partials/chapters";
+
+.print-layout{
+  padding: $spacing * 2 0;
+}
+
+section, .section{
+  page-break-after:always;
+  padding-bottom: 40px;
+}
