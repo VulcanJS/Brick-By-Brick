@@ -1,4 +1,15 @@
 
+.intro{
+  @include medium{
+    padding: 0 $spacing*4;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.4;
+  }
+}
+
 .telescope-note{
   background: $lighter-beige;
   @extend %block;
@@ -113,3 +124,8 @@
   }
 }
 
+.small-note{
+  margin-top: $spacing/2;
+  font-size: 18px;
+  color: $light-brown;
+}
