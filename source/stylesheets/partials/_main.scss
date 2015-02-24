@@ -1,6 +1,6 @@
 body{
   background: url("/images/bg.jpg");
-  background: #EDEAD8;
+  background: $bg-color;
   padding: 0;
   margin: 0;
 }
@@ -9,12 +9,12 @@ header{
   text-align: center;
   padding: 120px 0;
   margin-bottom: $spacing * 2;
-  border-bottom: 2px solid $dark-brown;
+  border-bottom: 3px solid $dark-brown;
   &.large{
     background: url("/images/city-bg.jpg") 0 0 repeat-x;
     background: url("/images/bg-header-city3.png") center 100% no-repeat;
-    background: url("/images/bg-header-city.svg") center 100% no-repeat;
-    background-size: 90%;
+    background: url("/images/city.svg") center 100% no-repeat;
+    background-size: 80%;
   }
   a{
     display: block;
