@@ -12,6 +12,18 @@
     right: 5px;
     border: 3px solid $light-beige;
   }
+  &:hover{
+    text-decoration: none;
+    &:before{
+      background-color: $medium-beige;
+    }
+    &:after{
+      border-color: $hover-color;
+    }
+    .chapter-icon *{
+      stroke: $orange;
+    }
+  }
 }
 
 .section-chapters{
@@ -48,20 +60,6 @@
       z-index: 0;
       position: relative;
     }
-   
-
-    &:hover{
-      text-decoration: none;
-      &:before{
-        background-color: $medium-beige;
-      }
-      &:after{
-        border-color: $hover-color;
-      }
-      .chapter-icon *{
-        stroke: $orange;
-      }
-    }    
   }
 }
 

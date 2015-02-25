@@ -1,23 +1,25 @@
 .post-nav{
   @extend %secondary-font;
+  padding-bottom: 10px;
   @include cf;
   .prev, .next{
-    width: 50%;
-    padding: $spacing/2;
-    @extend %striped;
-    &:hover{
-      background-color: $medium-beige;
-      text-decoration: none;
-    }
+    text-align: center;
+    width: calc(50% - 8px);
+    // padding: $spacing/2;
+    // @extend %striped;
+    @extend %card;
+    padding: $spacing;
+    // &:hover{
+    //   background-color: $medium-beige;
+    //   text-decoration: none;
+    // }
   }
   .prev{
+    margin-right: 8px;
     float: left;
-    text-align: left;
-    border-right: 1px solid $light-beige;
   }
   .next{
+    margin-left: 8px;
     float: right;
-    text-align: right;
-    border-left: 1px solid $light-beige;
   }
 }

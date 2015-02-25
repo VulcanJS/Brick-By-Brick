@@ -22,10 +22,11 @@ header{
   }
 }
 footer{
-  padding: 225px 0 15px 0;
+  // padding: 225px 0 15px 0;
+  padding: $spacing * 2 0;
   text-align: center;
-  background: url("/images/city-bg-alt.jpg") 0 0 repeat-x;
-  background-size: contain;
+  // background: url("/images/city-bg-alt.jpg") 0 0 repeat-x;
+  // background-size: contain;
   p{
     margin-bottom: 0;
   }

@@ -15,6 +15,9 @@ figure{
           width: auto;
         }
       }
+      &.wide{
+        width: 100%;
+      }
       &.pull-left{
         float: left;
         margin: 0 $spacing 0 -4*$spacing;

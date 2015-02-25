@@ -1,5 +1,6 @@
 
-.intro{
+.intro-content{
+  margin-bottom: $spacing * 2;
   @include medium{
     padding: 0 $spacing*4;
   }

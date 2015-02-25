@@ -135,7 +135,7 @@ helpers do
   def figure(src, caption="", css_class="", link="")
     prefix = ''
     if src[0..3] != 'http'
-      prefix = '/images/'
+      prefix = '/images/book/'
     end
 
     if link != ""

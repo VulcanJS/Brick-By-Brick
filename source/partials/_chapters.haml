@@ -9,6 +9,6 @@
     - blog('chapters').articles.sort_by! {|chapter| chapter.metadata[:page]["date"]}.each_with_index do |chapter, i|
       %a.chapter-link{href: chapter.url, class: 'chapter-'+chapter.data.title.downcase}
         .chapter-contents
-          %img.chapter-icon.svg{src: "/images/"+chapter.data.icon}
+          %img.chapter-icon.svg{src: "/images/icons/"+chapter.data.icon}
           %h3.chapter-title=chapter.data.title
           %p.chapter-description=chapter.data.description
