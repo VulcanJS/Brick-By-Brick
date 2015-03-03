@@ -10,6 +10,9 @@
 
 %striped{
   background-image: url('/images/stripes-bg.png');
+  @media print{
+    background: $bg-color;
+  }
   background-size: 12px 12px; 
 }
 
@@ -57,39 +60,6 @@ input, textarea, button{
 
 section{
   margin-bottom: $spacing * 2;
-}
-
-.section-title{
-  overflow: hidden;
-  text-align: center;
-  margin-bottom: $spacing;
-  .inner{
-    @extend .fancy;
-    line-height: 0.72;
-    display: inline-block;
-    margin-bottom: 0;
-    position: relative;
-  }
-  span{
-    padding: 0 20px;
-    &:before, &:after{
-      
-      background: url('/images/stripes-bg.png');
-      background-size: 12px 12px;
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 0px;
-      bottom: 0px;
-      width: 800px;
-    }
-    &:before{
-      right: 100%;
-    }
-    &:after{
-      left: 100%;
-    }
-  }
 }
 
 .section-subtitle{

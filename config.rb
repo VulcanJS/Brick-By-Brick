@@ -176,7 +176,7 @@ helpers do
   end
   def q(quote, name)
     contributor = data.contributors.select{|c| c.name == name}.first
-    %Q{<div class="quote"><div class="inner"><p>#{quote}</p><h4>#{name}, <a href="#{contributor.link}">#{contributor.community}</a></h4></div></div>}
+    %Q{<div class="quote"><div class="inner">#{quote}</div><h4><span>#{name}</span>, <a href="#{contributor.link}">#{contributor.community}</a></h4></div>}
   end
   def homework(&block)
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :fenced_code_blocks => true)

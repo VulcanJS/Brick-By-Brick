@@ -9,6 +9,11 @@
     // @extend %striped;
     @extend %card;
     padding: $spacing;
+    white-space: nowrap;
+    @include small{
+      padding: 15px 10px;
+      font-size: 16px;
+    }
     // &:hover{
     //   background-color: $medium-beige;
     //   text-decoration: none;

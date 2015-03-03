@@ -33,7 +33,9 @@ $(function(){
   var mySVGsToInject = document.querySelectorAll('.svg');
 
   // Do the injection
-  SVGInjector(mySVGsToInject);
+  SVGInjector(mySVGsToInject, {}, function () {
+    // new Vivus('svg-main-icon', {type: 'delayed', duration: 50});
+  });
 
   if ($('.tweet-content').length) {
     updateTweetLink();
@@ -52,5 +54,6 @@ $(function(){
     $link.addClass('twitter-link').attr('href', twitterLink).attr('target', '_blank');
 
   });
+
 
 });

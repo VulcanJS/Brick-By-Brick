@@ -1,0 +1,40 @@
+a[href~="#twitter"], .twitter-link{
+  font-weight: $light1;
+  background-color: #f8f5d5;
+  padding: 0 8px;
+  // display: inline-block;
+  position: relative;
+  cursor: pointer;
+  @include animate();
+  &, &:link, &:active, &:hover, &:visited{
+    color: $text-color; 
+    text-decoration: none;
+  }
+  &:after{
+    @include animate(width);
+    content: " ";
+    display: inline-block;
+    width: 0px;
+    @include small{
+      height: 26px;
+    }
+    @include medium{
+      height: 35px;
+    }
+    vertical-align: text-bottom;
+    position: relative;
+    right: -8px;
+    // position: absolute;
+    // right: 0px;
+    // top: 0px;
+    // bottom: 0px;
+    background: #f1ea92 url("/images/twitter2.svg") right 6px center no-repeat;
+    background-size: 20px 20px;
+  }
+  &:hover{
+    background-color: #faf5b7;
+    &:after{
+     width: 32px;
+    }
+  }
+}

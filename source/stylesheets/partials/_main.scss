@@ -1,8 +1,14 @@
-body{
+html{
   background: url("/images/bg.jpg");
   background: $bg-color;
+}
+
+html, body{
   padding: 0;
   margin: 0;
+  @include small{
+    overflow-x: hidden;
+  }
 }
 
 header{
@@ -11,8 +17,6 @@ header{
   margin-bottom: $spacing * 2;
   border-bottom: 3px solid $dark-brown;
   &.large{
-    background: url("/images/city-bg.jpg") 0 0 repeat-x;
-    background: url("/images/bg-header-city3.png") center 100% no-repeat;
     background: url("/images/city.svg") center 100% no-repeat;
     background-size: 80%;
   }
@@ -23,7 +27,7 @@ header{
 }
 footer{
   // padding: 225px 0 15px 0;
-  padding: $spacing * 2 0;
+  margin: $spacing * 2 0;
   text-align: center;
   // background: url("/images/city-bg-alt.jpg") 0 0 repeat-x;
   // background-size: contain;

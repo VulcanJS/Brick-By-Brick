@@ -22,11 +22,86 @@
 @import "partials/newsletter";
 @import "partials/chapters";
 
+
 .print-layout{
-  padding: $spacing * 2 0;
+  background-color: white;
+}
+
+@page{
+  margin: 1cm 2cm;
+}
+
+body{
+  color: #403c36;
+}
+
+.print-title{
+  margin-top: 180px;
+  text-align: center;
+  img{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    border-bottom: 3px solid $dark-brown;
+    margin-bottom: $spacing;
+  }
+  h1{
+    font-size: 50px;
+    line-height: 1.3;
+    margin-bottom: $spacing;
+  }
+}
+
+.author-photo{
+  float: left;
+  margin-right: $spacing;
+}
+
+.section-chapters-print{
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    margin-bottom: $spacing/2;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  .chapter-title{
+    margin: 0 0 5px 0;
+    font-size: 20px;
+  }
+  .chapter-description{
+    margin: 0;
+  }
+}
+
+figure, .quote{
+  background-color: $bg-color;
+}
+
+figure{
+  width: 70%;
+}
+
+a[href~="#twitter"], .twitter-link{
+  color: $text-color;
+  font-weight: medium();
+  text-decoration: none;
+  cursor: text;
 }
 
 section, .section{
   page-break-after:always;
   padding-bottom: 40px;
+}
+
+.section-title{
+  margin-bottom: $spacing;
+  h2{
+    margin: 0;
+    font-size: 40px;
+  }
 }

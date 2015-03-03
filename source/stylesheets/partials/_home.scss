@@ -27,6 +27,7 @@
   text-align: center;
   @include small{
     margin-bottom: $mspacing;
+    width: 100%;
   }
   @include medium{
     width: 260px;
@@ -129,4 +130,8 @@
   margin-top: $spacing/2;
   font-size: 18px;
   color: $light-brown;
+}
+
+.tweets{
+  text-align: center;
 }

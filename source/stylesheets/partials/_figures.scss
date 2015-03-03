@@ -46,8 +46,9 @@ figure{
     }
   }
   figcaption{
+    @extend %secondary-font;
+    font-weight: $bold2;
     margin-top: 10px;
     font-size: 18px;
-    font-style: italic;
     text-align: center;
   }

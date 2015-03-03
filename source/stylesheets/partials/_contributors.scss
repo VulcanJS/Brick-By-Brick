@@ -1,3 +1,7 @@
+$columns: 4;
+$gutters: $columns - 1;
+$gutterspace: $spacing * $gutters;
+
 .contributors{
   text-align: center;
   display: flex;
@@ -10,9 +14,9 @@
     width: 100%;
   }
   @include medium{
-    width: 22%;
-    margin-right: 4%;
-    &:nth-of-type(4n){
+    width: calc((100% - #{$gutterspace})/#{$columns});
+    margin-right: $spacing;
+    &:nth-of-type(#{$columns}n){
       margin-right: 0;
     }
   }
