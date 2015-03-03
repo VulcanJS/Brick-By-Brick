@@ -58,7 +58,7 @@ $bold3: 800;
 .section-title{
   overflow: hidden;
   text-align: center;
-  margin-bottom: $spacing;
+  margin-bottom: $spacing;  
   .inner{
     @extend .fancy;
     line-height: 0.73;

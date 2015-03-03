@@ -6,10 +6,10 @@
   image: justinkan.jpg
   community: "The Drop"
   link: http://thedrop.club
-- name: Kyle Bragger
-  image: kyle.jpg
-  community: Exposure
-  link: http://exposure.co
+# - name: Kyle Bragger
+#   image: kyle.jpg
+#   community: Exposure
+#   link: http://exposure.co
 - name: Pieter Levels
   image: levels.jpg
   community: "#Nomads"

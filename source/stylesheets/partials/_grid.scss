@@ -28,14 +28,14 @@ $grid-padding   : 0px;
 // mobile
 
 .container{
-  @include container;
   @include small{
     padding:0 10px;
   }
   @include medium{
     padding:0 20px;
     width: 900px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
