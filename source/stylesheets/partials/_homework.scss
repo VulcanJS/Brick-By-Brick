@@ -2,6 +2,7 @@ $thickness: 2px;
 $color: $medium-beige;
 
 .homework{
+  page-break-inside: avoid;
   // background: white(0.5);
   position: relative;
   margin: 0 -10px $spacing*2 -10px;

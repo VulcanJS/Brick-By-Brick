@@ -6,7 +6,12 @@
   }
   h2{
     text-align: center;
-    font-size: 30px;
+    @include small{
+      font-size: 22px;
+    }
+    @include medium{
+      font-size: 36px;
+    }
     line-height: 1.4;
     color: $orange;
   }

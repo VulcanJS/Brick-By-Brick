@@ -1,4 +1,5 @@
 .quote{
+  page-break-inside: avoid;
   @extend %striped;
   padding: 15px;
   font-style: italic;

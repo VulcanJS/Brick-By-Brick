@@ -33,7 +33,8 @@ $grid-padding   : 0px;
   }
   @include medium{
     padding:0 20px;
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }

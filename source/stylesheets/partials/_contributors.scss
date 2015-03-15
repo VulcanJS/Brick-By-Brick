@@ -9,7 +9,7 @@ $gutterspace: $spacing * $gutters;
 }
 
 .contributor{
-  margin-bottom: $spacing;
+  margin-bottom: $spacing*2;
   @include small{
     width: 100%;
   }
@@ -46,4 +46,25 @@ $gutterspace: $spacing * $gutters;
 .contributor-community{
   margin-bottom: 0;
   font-size: 14px;
+}
+
+.contributor-more{
+  .inner{
+    text-align: center;
+    background: $medium-beige;
+    border-radius: 100%;
+    width: 80%;
+    padding-bottom: 80%;
+    height: 0;
+    line-height: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .more{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

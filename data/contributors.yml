@@ -1,7 +1,3 @@
-- name: Ryan Hoover
-  image: ryanhoover.jpg
-  community: "Prodct Hunt"
-  link: http://producthunt.com
 - name: Justin Kan
   image: justinkan.jpg
   community: "The Drop"
@@ -14,10 +10,6 @@
   image: levels.jpg
   community: "#Nomads"
   link: http://hashtagnomads.com
-- name: Justin Jackson
-  image: justin.jpg
-  community: Product People Club
-  link: http://productpeople.club
 - name: Josh Owens
   image: josh.jpg
   community: Crater.io
@@ -26,6 +18,10 @@
   image: jeannicholas.jpg
   community: Bootstrappers.io
   link: http://bootstrappers.io
+- name: Justin Jackson
+  image: justin.jpg
+  community: Product People Club
+  link: http://productpeople.club
 - name: Ryan Gum
   image: ryan.jpg
   community: Closing Call
@@ -34,3 +30,7 @@
   image: kelly.jpg
   community: Designer News
   link: http://news.layervault.com
+- name: Ryan Hoover
+  image: ryanhoover.jpg
+  community: "Prodct Hunt"
+  link: http://producthunt.com

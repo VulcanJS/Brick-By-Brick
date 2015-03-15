@@ -13,16 +13,63 @@ html, body{
 
 header{
   text-align: center;
-  padding: 120px 0;
-  margin-bottom: $spacing * 2;
-  border-bottom: 3px solid $dark-brown;
-  &.large{
-    background: url("/images/city.svg") center 100% no-repeat;
-    background-size: 80%;
+  position: relative;
+  // background: linear-gradient(to bottom, rgba(255,182,79,0.5), rgba(255,182,79,0.3) 30%, rgba(242,227,206,0.2) 70%);
+  @include small{
+    margin-bottom: $spacing;
   }
-  a{
+  @include medium{
+    padding-top: $spacing*2;
+    margin-bottom: $spacing * 2;
+  }
+  border-bottom: 3px solid $dark-brown;
+  h1{
+    margin: 0;
+  }
+  a.logo-link{
     display: block;
     @include hide-text();
+    @include small{
+      padding: $spacing 10px 0 10px;
+    }
+    @include medium{
+      padding: 0 20px;
+      // background: url("/images/city.svg") center 100% no-repeat;
+      // background-size: 80%;
+    }
+  }
+  img{
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    &.medium{
+      max-width: 900px;
+
+      @include medium{
+        display: block;
+      }
+    }
+    &.small{
+      max-width: 600px;
+      @include small{
+        display: block;
+      }
+    }
+  }
+  .credit{
+    position: absolute;
+    right: 10px;
+    @include small{
+      bottom: -30px;
+    }
+    @include medium{
+      bottom: 10px;
+    }
+    font-size: 13px;
+    opacity: 0.5;
+    a{
+      color: $text-color;
+    }
   }
 }
 footer{
