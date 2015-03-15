@@ -119,6 +119,8 @@ activate :directory_indexes
 
 activate :syntax#,:linenos => 'table'
 
+activate :autoprefixer
+
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 
