@@ -53,18 +53,29 @@ $gutterspace: $spacing * $gutters;
     text-align: center;
     background: $medium-beige;
     border-radius: 100%;
-    width: 80%;
-    padding-bottom: 80%;
-    height: 0;
-    line-height: 80%;
+    max-width: 200px;
+    max-height: 200px;
     margin: 0 auto;
     position: relative;
-  }
-  .more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    &:before {
+      content: '';
+      padding-top: 100%;  
+    }
+    @include small{
+      font-size: 24px;
+      width: 100%;
+    }
+    @include medium{
+      width: 80%;
+    }
+    // text-align: center;
+    // width: 100%;
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
   }
 }
