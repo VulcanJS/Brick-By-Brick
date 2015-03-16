@@ -17,6 +17,10 @@
   font-weight: $light2;
   border: none;
   border: 2px solid $medium-beige;
+  display: inline-block;
+  @include small{
+    width: 100%;
+  }
 }
 .newsletter-submit{
   @extend .primary-button;
