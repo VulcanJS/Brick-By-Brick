@@ -4,35 +4,127 @@
 		"selected_items":
 		[
 			[
-				"pa",
-				"padding-right"
+				"font-",
+				"font-size"
+			],
+			[
+				"max-",
+				"max-height"
 			],
 			[
 				"ma",
-				"margin"
+				"margin-bottom"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"p",
+				"padding-top"
+			],
+			[
+				"pa",
+				"padding-bottom"
 			],
 			[
 				"m",
 				"margin"
 			],
 			[
+				"border",
+				"border-left"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"fon-s",
+				"font-size"
+			],
+			[
+				"encodeUr",
+				"encodeURIComponent"
+			],
+			[
+				"twi",
+				"twitterLink"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"ou",
+				"outline-color"
+			],
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"mediu",
+				"medium-beige"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
 				"max",
 				"max-width"
 			],
 			[
-				"bord",
-				"border-bottom"
-			],
-			[
 				"fn",
-				"font-size"
-			],
-			[
-				"li",
-				"list-style-type"
-			],
-			[
-				"fon",
 				"font-size"
 			],
 			[
@@ -44,36 +136,16 @@
 				"clear"
 			],
 			[
-				"font-",
-				"font-weight"
-			],
-			[
 				"b",
 				"both"
-			],
-			[
-				"max-",
-				"max-height"
 			],
 			[
 				"inli",
 				"inline-block"
 			],
 			[
-				"mar",
-				"margin-top"
-			],
-			[
-				"ba",
-				"background"
-			],
-			[
 				"me",
 				"medium-grey"
-			],
-			[
-				"padd",
-				"padding-bottom"
 			],
 			[
 				"list",
@@ -88,24 +160,12 @@
 				"important"
 			],
 			[
-				"bor",
-				"border-bottom"
-			],
-			[
 				"background-s",
 				"background-size"
 			],
 			[
-				"font-s",
-				"font-style"
-			],
-			[
 				"wi",
 				"width"
-			],
-			[
-				"border",
-				"border-radius"
 			],
 			[
 				"v",
@@ -164,20 +224,8 @@
 				"secondary-font"
 			],
 			[
-				"co",
-				"color"
-			],
-			[
 				"pack",
 				"package-title"
-			],
-			[
-				"font",
-				"font-size"
-			],
-			[
-				"tex",
-				"text-align"
 			],
 			[
 				"pad",
@@ -260,16 +308,8 @@
 				"collectionName"
 			],
 			[
-				"border-r",
-				"border-radius"
-			],
-			[
 				"posts",
 				"postsPerPage"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"old",
@@ -302,10 +342,6 @@
 			[
 				"pare",
 				"parentCommentId"
-			],
-			[
-				"p",
-				"properties"
 			],
 			[
 				"no_",
@@ -455,11 +491,40 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "source/javascripts/main.js",
+			"settings":
+			{
+				"buffer_size": 2244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/index.html.haml",
+			"settings":
+			{
+				"buffer_size": 422,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/layouts/layout.haml",
+			"settings":
+			{
+				"buffer_size": 2481,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 47.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -492,148 +557,163 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/sacha/Dev/combuild"
+		"/Users/sacha/Dev/combuild",
+		"/Users/sacha/Dev/combuild/data",
+		"/Users/sacha/Dev/combuild/source",
+		"/Users/sacha/Dev/combuild/source/chapters",
+		"/Users/sacha/Dev/combuild/source/fonts",
+		"/Users/sacha/Dev/combuild/source/javascripts",
+		"/Users/sacha/Dev/combuild/source/javascripts/vendor",
+		"/Users/sacha/Dev/combuild/source/layouts",
+		"/Users/sacha/Dev/combuild/source/partials",
+		"/Users/sacha/Dev/combuild/source/stylesheets",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials"
 	],
 	"file_history":
 	[
-		"/Users/sacha/Dev/Telemiddle/source/docs/getting-started/getting-help.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/custom-templates.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/tutorials/case-study-crunchhunt.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_main.scss",
-		"/Users/sacha/Dev/Telemiddle/source/docs/tutorials/api-based-sorting.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/i18n.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/custom-post-fields.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/getting-started/installing-telescope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/showcase.html.haml",
-		"/Users/sacha/Dev/Telemiddle/data/showcase.yml",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_docs.scss",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/hooks.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/telescope-v0140-gridscope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/making-of-crunchhunt.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_colors.scss",
-		"/Users/sacha/Dev/Telemiddle/source/docs/getting-started/updating.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/customization-basics.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs.html.haml",
-		"/Users/sacha/Dev/Telemiddle/data/doc_sections.yml",
-		"/Users/sacha/Dev/Telemiddle/source/index.html.haml",
-		"/Users/sacha/Dev/Telemiddle/config.ru",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/creating-packages.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/theming-telescope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/can-you-help-me-with.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/getting-started/configuring-telescope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/tutorials/adding-static-pages.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/building-content-aggregator-email-digest.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/post-by-feed.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/telescope-v0120-dummyscope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/getting-started/deploying.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/getting-started-with-telescope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/Gemfile",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_grid.scss",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/troubleshooting.md.erb",
-		"/Users/sacha/Dev/Telemiddle/rack_try_static.rb",
-		"/Users/sacha/Dev/Telemiddle/rack_static_cache.rb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/notifications.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/partials/_nav.haml",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_home.scss",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_hero.scss",
-		"/Users/sacha/Dev/Telemiddle/telemiddle.sublime-project",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_blog.scss",
-		"/Users/sacha/Dev/Telemiddle/source/blog/telescope-hangout-2-search-seo-scss.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/telescope-hangout-3.md.erb",
-		"/Users/sacha/Dev/Telemiddle/build/blog/telescope-v07-ironscope/index.html",
-		"/Users/sacha/Dev/Telemiddle/source/blog/telescope-v07-ironscope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog.html.haml",
-		"/Users/sacha/Dev/Telemiddle/source/contribute.html.haml",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/custom-views.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/layouts/docs_layout.haml",
-		"/Users/sacha/Dev/Telemiddle/source/layouts/post_layout.haml",
-		"/Users/sacha/Dev/Telemiddle/source/layouts/layout.haml",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/newsletter.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/partials/_docs_toc.haml",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/embedly.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/rss.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/ie.scss",
-		"/Users/sacha/Dev/Telemiddle/source/blog/search-and-internationalization.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/other-packages.md.erb",
-		"/Users/sacha/Dev/Telemiddle/config.rb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/search.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/singleday.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/tags.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/theme-base.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/theme-hubble.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/getting-started/resources.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/daily.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/email.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/partials/_buttons.haml",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/update-prompt.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/tutorials/embedly-module.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/blank.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/base.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/getting-started.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/invites.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/lib.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/module-share.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/releases.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_partners.scss",
-		"/Users/sacha/Dev/Telemiddle/source/docs/core/scoring.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/static-pages.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/custom-themes.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/core/sending-email.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/getting-started/faq.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/adding-views.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/faq.html.haml",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_footer.scss",
-		"/Users/sacha/Dev/Telemiddle/source/partials/_features.haml",
-		"/Users/sacha/Dev/Telemiddle/source/feed.xml.builder",
-		"/Users/sacha/Dev/Telemiddle/source/docs/customizing/post-modules.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/packages.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/configuring-telescope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/datetimepicker.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/packages/kadira.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/creating-packages.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/telescope-base.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/javascripts/main.js",
-		"/Users/sacha/Dev/Telemiddle/source/docs/installing-telescope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/sending-email.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/deploying.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/telescope-hangout-4.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_mixins.scss",
-		"/Users/sacha/Dev/Telemiddle/source/blog/telescope-v093-dailyscope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/build/stylesheets/print.css",
-		"/Users/sacha/Dev/Telemiddle/source/docs/custom-themes.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/telescope-v0910-i18nscope.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/custom-fields.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/subscribe.html.haml",
-		"/Users/sacha/Dev/Telemiddle/build/stylesheets/screen.css",
-		"/Users/sacha/Dev/Telemiddle/source/docs/scoring.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/telescope-v0911-custom-fields.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/javascripts/vendor/jquery.fitvids.js",
-		"/Users/sacha/Dev/Telemiddle/source/blog/extending-telescope-with-embedly-thumbnails.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/introducing-trickle-down-karma.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_normalize.scss",
-		"/Users/sacha/Dev/Telemiddle/source/docs/hooks.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/roadmap.html.haml",
-		"/Users/sacha/Dev/Telemiddle/data/roadmap.yml",
-		"/Users/sacha/Dev/Telemiddle/source/blog/open-source-lessons-learned.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/adding-views.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/static-pages.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/stylesheets/partials/_showcase.scss",
-		"/Users/sacha/Dev/Telemiddle/source/blog/algorhitms.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/updating.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/lessons-learned.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/docs/using-packages.md.erb",
-		"/Users/sacha/Dev/Telemiddle/source/blog/telescope-v094-updatescope.md.erb"
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_quotes.scss",
+		"/Users/sacha/Dev/combuild/source/images/icons/promotion.svg",
+		"/Users/sacha/Dev/combuild/Procfile",
+		"/Users/sacha/Dev/combuild/source/partials/_title_print.haml",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_main.scss",
+		"/Users/sacha/Dev/combuild/source/partials/_download.haml",
+		"/Users/sacha/Dev/combuild/source/chapters/00-introduction.md.erb",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_contributors.scss",
+		"/Users/sacha/Dev/combuild/source/partials/_featuring.haml",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_fancy.scss",
+		"/Users/sacha/Dev/combuild/data/contributors.yml",
+		"/Users/sacha/Dev/combuild/source/partials/_contents_print.haml",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_colors.scss",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_chapters.scss",
+		"/Users/sacha/Dev/combuild/source/partials/_intro.haml",
+		"/Users/sacha/Dev/combuild/source/index.html.haml",
+		"/Users/sacha/Dev/combuild/source/javascripts/main.js",
+		"/Users/sacha/Dev/combuild/source/partials/_share.haml",
+		"/Users/sacha/Dev/combuild/source/chapters/01-audience.md.erb",
+		"/Users/sacha/Dev/combuild/config.rb",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_newsletter.scss",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_grid.scss",
+		"/Users/sacha/Dev/combuild/source/partials/_newsletter.haml",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_nav.scss",
+		"/Users/sacha/Dev/combuild/source/stylesheets/print.scss",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_homework.scss",
+		"/Users/sacha/Dev/combuild/source/layouts/layout.haml",
+		"/Users/sacha/.bash_profile",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_typography.scss",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_mixins.scss",
+		"/Users/sacha/Dev/combuild/source/layouts/print_layout.haml",
+		"/Users/sacha/Dev/combuild/source/partials/_share_print.haml",
+		"/Users/sacha/Dev/combuild/source/partials/_chapters_print.haml",
+		"/Users/sacha/Dev/combuild/source/print.html.haml",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_home.scss",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_figures.scss",
+		"/Users/sacha/Dev/combuild/source/chapters/03-engagement.md.erb",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_elements.scss",
+		"/Users/sacha/Dev/combuild/source/chapters/04-email.md.erb",
+		"/Users/sacha/Dev/combuild/source/partials/_author.haml",
+		"/Users/sacha/Dev/combuild/tmp/404/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/00-introduction/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/01-audience/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/02-seeding/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/03-engagement/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/04-email/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/05-promotion/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/06-exclusivity/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/07-recycling/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/09-voice/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/08-value/index.html",
+		"/Users/sacha/Dev/combuild/tmp/chapters/10-conclusion/index.html",
+		"/Users/sacha/Dev/combuild/tmp/index.html",
+		"/Users/sacha/Dev/combuild/tmp/print/index.html",
+		"/Users/sacha/Dev/combuild/tmp/subscribe/index.html",
+		"/Users/sacha/Dev/combuild/tmp/javascripts/main.js",
+		"/Users/sacha/Dev/combuild/source/javascripts/vendor/dropcap.min.js",
+		"/Users/sacha/Dev/combuild/source/images/bg-header-city.svg",
+		"/Users/sacha/Dev/combuild/source/partials/_chapters.haml",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_tweet-links.scss",
+		"/Users/sacha/Dev/combuild/source/fonts/Sullivan-Bevel.otf",
+		"/Users/sacha/Dev/combuild/source/images/facebook-square.svg",
+		"/Users/sacha/Dev/combuild/source/fonts/Sullivan-Fill.otf",
+		"/Users/sacha/Dev/combuild/config.ru",
+		"/Users/sacha/Dev/combuild/rack_static_cache.rb",
+		"/Users/sacha/Dev/combuild/source/stylesheets/screen.scss",
+		"/Users/sacha/Dev/combuild/source/chapters/05-promotion.md.erb",
+		"/Users/sacha/Dev/combuild/source/chapters/06-moderation.md.erb",
+		"/Users/sacha/Dev/combuild/source/chapters/07-recycling.md.erb",
+		"/Users/sacha/Dev/combuild/source/chapters/08-value.md.erb",
+		"/Users/sacha/Dev/combuild/source/chapters/09-voice.md.erb",
+		"/Users/sacha/Dev/combuild/source/layouts/chapter_layout.haml",
+		"/Users/sacha/Dev/combuild/source/partials/_tweets.haml",
+		"/Users/sacha/Dev/combuild/tmp/stylesheets/print.css",
+		"/Users/sacha/Dev/combuild/source/images/twitter.svg",
+		"/Users/sacha/Dev/combuild/source/chapters/10-conclusion.md.erb",
+		"/Users/sacha/Dev/combuild/source/javascripts/vendor/vivus.min.js",
+		"/Users/sacha/Dev/combuild/tmp/images/audience.svg",
+		"/Users/sacha/Dev/combuild/source/images/audience.svg",
+		"/Users/sacha/Dev/combuild/source/stylesheets/partials/_buttons.scss",
+		"/Users/sacha/Dev/combuild/source/chapters/02-seeding.md.erb",
+		"/Users/sacha/Dev/combuild/source/images/city.ai",
+		"/Users/sacha/Dev/combuild/tmp/images/value.svg",
+		"/Users/sacha/Dev/combuild/source/images/value.svg",
+		"/Users/sacha/Dev/combuild/source/ebook.html.haml",
+		"/Users/sacha/Dev/combuild/source/layouts/ebook_layout.haml",
+		"/Users/sacha/Dev/combuild/source/sections/01-audience.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/03-engagement.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/04-email.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/05-promotion.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/06-exclusivity.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/07-recycling.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/02-seeding.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/08-value.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/09-voice.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/10-conclusion.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/00-introduction.md.erb",
+		"/Users/sacha/Dev/combuild/source/images/buldozer.svg",
+		"/Users/sacha/Dev/combuild/source/fonts/ss-social-regular.woff",
+		"/Users/sacha/Dev/combuild/source/images/crane.svg",
+		"/Users/sacha/Dev/combuild/source/sections/voice.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/email.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/seeding.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/exclusivity.md.erb",
+		"/Users/sacha/Dev/combuild/data/sections.yml",
+		"/Users/sacha/Dev/combuild/source/sections/audience.md.erb",
+		"/Users/sacha/Dev/combuild/Gemfile",
+		"/Users/sacha/Dev/combuild/source/sections/value.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/promotion.md.erb",
+		"/Users/sacha/Dev/combuild/source/javascripts/vendor/svg-injector.min.js",
+		"/Users/sacha/Dev/combuild/rack_try_static.rb",
+		"/Users/sacha/Dev/combuild/source/layouts/section_layout.haml",
+		"/Users/sacha/Dev/combuild/source/sections/recycling.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/engagement.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/personality.md.erb",
+		"/Users/sacha/Dev/combuild/source/javascripts/main-ck.js",
+		"/Users/sacha/Dev/combuild/source/sections/reusing-your-content.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/seeding-content.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/engaging-your-community.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/reaching-your-audience.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/defining-a-target.md.erb",
+		"/Users/sacha/Dev/combuild/source/sections/inviting-members.md.erb",
+		"/Users/sacha/Dev/combuild/source/content/defining-a-target.md.erb",
+		"/Users/sacha/Dev/combuild/source/content/inviting-members.md.erb",
+		"/Users/sacha/Dev/combuild/source/content/seeding-content.md.erb",
+		"/Users/sacha/Dev/combuild/source/content/engaging-your-community.md.erb",
+		"/Users/sacha/Dev/combuild/source/content/reusing-your-content.md.erb",
+		"/Users/sacha/Dev/combuild/source/content/reaching-your-audience.md.erb"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/sacha/Dev/combuild",
+			"/Users/sacha/Dev/combuild/source/sections",
+			"/Users/sacha/Dev/combuild/source/stylesheets/partials",
+			"/Users/sacha/Dev/combuild/source/sections",
+			"/Users/sacha/Dev/combuild/source/stylesheets/partials",
 			"/Users/sacha/Dev/Telemiddle/source/docs",
 			"/Users/sacha/Dev/Telemiddle/source/docs/packages",
 			"/Users/sacha/Dev/Telemiddle/source/docs",
@@ -683,6 +763,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"autopre",
+			"activate",
+			"telesc.pe",
+			"telescpe",
+			"center",
+			"figure",
+			"download-button",
+			"intro",
+			"twitter-link",
+			"shar",
+			"quote",
+			"font-weight",
+			"2a2924",
+			"closingcall.io",
+			"0001/01",
+			"pspacing",
+			"quote",
+			"homework",
+			"button",
+			"%block",
+			"line-he",
+			"EFECDB",
+			"section",
+			"features",
 			"after all",
 			"new",
 			"ne",
@@ -786,31 +890,7 @@
 			"progress[value]",
 			"nth-omega",
 			",",
-			"=>",
-			":",
-			"\n  {\n    ",
-			"},",
-			"},\n",
-			"mxp",
-			"data-cat",
-			"submit-review",
-			"join",
-			"HEAD",
-			"chapter",
-			"':",
-			"itemprop",
-			"twitter",
-			"main",
-			"figure",
-			"cookie",
-			"sidebar",
-			"love ",
-			"love",
-			"blog",
-			"permalink",
-			"blockquo",
-			"block",
-			"dotted"
+			"=>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -818,6 +898,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"telescopeapp.org",
+			"closingcall.co",
+			"0002/01",
+			"spacing",
+			"chapter",
 			"getPostsTweetCount",
 			"\n### ",
 			"viewsMenu",
@@ -901,8 +986,97 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "source/javascripts/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/index.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/layouts/layout.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1311,
+								1371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 30.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -941,17 +1115,287 @@
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "combuild.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"layou",
+				"source/layouts/layout.haml"
+			],
+			[
+				"inde",
+				"source/index.html.haml"
+			],
+			[
+				"main",
+				"source/javascripts/main.js"
+			],
+			[
+				"down",
+				"source/partials/_download.haml"
+			],
+			[
+				"fea",
+				"source/partials/_featuring.haml"
+			],
+			[
+				"contri",
+				"source/stylesheets/partials/_contributors.scss"
+			],
+			[
+				"intro",
+				"source/chapters/00-introduction.md.erb"
+			],
+			[
+				"share",
+				"source/partials/_share.haml"
+			],
+			[
+				"grid",
+				"source/stylesheets/partials/_grid.scss"
+			],
+			[
+				"news",
+				"source/stylesheets/partials/_newsletter.scss"
+			],
+			[
+				"confi",
+				"config.rb"
+			],
+			[
+				"typo",
+				"source/stylesheets/partials/_typography.scss"
+			],
+			[
+				"mixin",
+				"source/stylesheets/partials/_mixins.scss"
+			],
+			[
+				"print",
+				"source/stylesheets/print.scss"
+			],
+			[
+				"home",
+				"source/stylesheets/partials/_homework.scss"
+			],
+			[
+				"figu",
+				"source/stylesheets/partials/_figures.scss"
+			],
+			[
+				"quot",
+				"source/stylesheets/partials/_quotes.scss"
+			],
+			[
+				"colors",
+				"source/stylesheets/partials/_colors.scss"
+			],
+			[
+				"colo",
+				"source/stylesheets/partials/_colors.scss"
+			],
+			[
+				"color",
+				"source/stylesheets/partials/_colors.scss"
+			],
+			[
+				"cont",
+				"source/stylesheets/partials/_contributors.scss"
+			],
+			[
+				"feat",
+				"source/partials/_featuring.haml"
+			],
+			[
+				"ind",
+				"source/index.html.haml"
+			],
+			[
+				"con",
+				"data/contributors.yml"
+			],
+			[
+				"chap",
+				"source/partials/_chapters.haml"
+			],
+			[
+				"fan",
+				"source/stylesheets/partials/_fancy.scss"
+			],
+			[
+				"lay",
+				"source/layouts/layout.haml"
+			],
+			[
+				"cha",
+				"source/stylesheets/partials/_chapters.scss"
+			],
+			[
+				"elem",
+				"source/stylesheets/partials/_elements.scss"
+			],
+			[
+				"fancy",
+				"source/stylesheets/partials/_fancy.scss"
+			],
+			[
+				"ele",
+				"source/stylesheets/partials/_elements.scss"
+			],
+			[
+				"tweet",
+				"source/stylesheets/partials/_tweet-links.scss"
+			],
+			[
+				"nav",
+				"source/stylesheets/partials/_nav.scss"
+			],
+			[
+				"quo",
+				"source/stylesheets/partials/_quotes.scss"
+			],
+			[
+				"sha",
+				"source/partials/_share.haml"
+			],
+			[
+				"chapt",
+				"source/stylesheets/partials/_chapters.scss"
+			],
+			[
+				"prin",
+				"source/partials/_title_print.haml"
+			],
+			[
+				"ma",
+				"source/stylesheets/partials/_main.scss"
+			],
+			[
+				"title",
+				"source/partials/_title_print.haml"
+			],
+			[
+				"figur",
+				"source/stylesheets/partials/_figures.scss"
+			],
+			[
+				"contents",
+				"source/partials/_contents_print.haml"
+			],
+			[
+				"chapters",
+				"source/partials/_chapters_print.haml"
+			],
+			[
+				"ni",
+				"tmp/print/index.html"
+			],
+			[
+				"audienc",
+				"source/chapters/01-audience.md.erb"
+			],
+			[
+				"udi",
+				"source/images/audience.svg"
+			],
+			[
+				"into",
+				"source/partials/_intro.haml"
+			],
+			[
+				"config",
+				"config.rb"
+			],
+			[
+				"hom",
+				"source/stylesheets/partials/_home.scss"
+			],
+			[
+				"butt",
+				"source/stylesheets/partials/_buttons.scss"
+			],
+			[
+				"new",
+				"source/partials/_newsletter.haml"
+			],
+			[
+				"value",
+				"source/chapters/08-value.md.erb"
+			],
+			[
+				"do",
+				"source/partials/_download.haml"
+			],
+			[
+				"conf",
+				"config.rb"
+			],
+			[
+				"ch",
+				"source/stylesheets/partials/_chapters.scss"
+			],
+			[
+				"ebook",
+				"source/ebook.html.haml"
+			],
+			[
+				"contr",
+				"data/contributors.yml"
+			],
+			[
+				"cnotri",
+				"data/contributors.yml"
+			],
+			[
+				"button",
+				"source/stylesheets/partials/_buttons.scss"
+			],
+			[
+				"in",
+				"source/index.html.haml"
+			],
+			[
+				"scr",
+				"source/stylesheets/screen.scss"
+			],
+			[
+				"scre",
+				"source/stylesheets/screen.scss"
+			],
+			[
+				"aud",
+				"source/sections/audience.md.erb"
+			],
+			[
+				"audi",
+				"source/sections/audience.md.erb"
+			],
+			[
+				"lem",
+				"source/stylesheets/partials/_elements.scss"
+			],
+			[
+				"main.s",
+				"source/stylesheets/partials/_main.scss"
+			],
+			[
+				"email",
+				"source/sections/email.md.erb"
+			],
+			[
+				"config.rb",
+				"config.rb"
+			],
 			[
 				"customt",
 				"source/docs/customizing/custom-templates.md.erb"
@@ -989,10 +1433,6 @@
 				"source/stylesheets/partials/_hero.scss"
 			],
 			[
-				"main",
-				"source/stylesheets/partials/_main.scss"
-			],
-			[
 				"blog",
 				"source/stylesheets/partials/_blog.scss"
 			],
@@ -1013,10 +1453,6 @@
 				"source/docs/customizing/troubleshooting.md.erb"
 			],
 			[
-				"grid",
-				"source/stylesheets/partials/_grid.scss"
-			],
-			[
 				"docs",
 				"source/stylesheets/partials/_docs.scss"
 			],
@@ -1025,20 +1461,12 @@
 				"source/docs.html.haml"
 			],
 			[
-				"layou",
-				"source/layouts/layout.haml"
-			],
-			[
 				"post",
 				"source/layouts/post_layout.haml"
 			],
 			[
 				"his",
 				"source/stylesheets/ie.scss"
-			],
-			[
-				"confi",
-				"source/docs/getting-started/configuring-telescope.md.erb"
 			],
 			[
 				"base",
@@ -1065,36 +1493,8 @@
 				"source/partials/_features.haml"
 			],
 			[
-				"conf",
-				"config.rb"
-			],
-			[
-				"config",
-				"config.ru"
-			],
-			[
-				"home",
-				"source/stylesheets/partials/_home.scss"
-			],
-			[
 				"depl",
 				"source/docs/deploying.md.erb"
-			],
-			[
-				"email",
-				"source/docs/sending-email.md.erb"
-			],
-			[
-				"mixin",
-				"source/stylesheets/partials/_mixins.scss"
-			],
-			[
-				"inde",
-				"source/index.html.haml"
-			],
-			[
-				"colo",
-				"source/stylesheets/partials/_colors.scss"
 			],
 			[
 				"showc",
@@ -1123,10 +1523,6 @@
 			[
 				"col",
 				"source/stylesheets/partials/_colors.scss"
-			],
-			[
-				"nav",
-				"source/partials/_nav.haml"
 			],
 			[
 				"_main.s",
@@ -1185,10 +1581,6 @@
 				"source/docs/adding-lenses.md.erb"
 			],
 			[
-				"figu",
-				"source/docs/configuring-telescope.md.erb"
-			],
-			[
 				"showcase",
 				"source/showcase.haml"
 			],
@@ -1215,10 +1607,6 @@
 			[
 				"post_",
 				"source/layouts/post_layout.haml"
-			],
-			[
-				"contri",
-				"source/contribute.html.haml"
 			],
 			[
 				"head",
@@ -1251,218 +1639,6 @@
 			[
 				"secu",
 				"source/blog/meteor-and-security.md.erb"
-			],
-			[
-				"shir",
-				"source/tshirt.html.haml"
-			],
-			[
-				"figure",
-				"source/stylesheets/includes/_figures.scss"
-			],
-			[
-				"ill",
-				"source/blog/illustreets-mapping-the-uk-with-meteor.md.erb"
-			],
-			[
-				"lang",
-				"data/languages.yml"
-			],
-			[
-				"code",
-				"data/promocodes.yml"
-			],
-			[
-				"autho",
-				"source/partials/_author.haml"
-			],
-			[
-				"case",
-				"source/stylesheets/includes/_case_studies.scss"
-			],
-			[
-				"mxin",
-				"source/stylesheets/includes/_mixins.scss"
-			],
-			[
-				"trans",
-				"source/stylesheets/includes/_translations.scss"
-			],
-			[
-				"joins",
-				"source/blog/reactive-joins-in-meteor.md.erb"
-			],
-			[
-				"scal",
-				"source/blog/scaling-meteor-the-challenges-of-realtime-apps.md.erb"
-			],
-			[
-				"spaceb",
-				"source/blog/spacebars-secrets-exploring-meteor-new-templating-engine.md.erb"
-			],
-			[
-				"summa",
-				"source/partials/_summary.haml"
-			],
-			[
-				"illu",
-				"source/blog/illustreets-mapping-the-uk-with-meteor.md.erb"
-			],
-			[
-				"shirt",
-				"source/stylesheets/includes/_tshirt.scss"
-			],
-			[
-				"tshir",
-				"source/blog/discover-meteor-t-shirt.md.erb"
-			],
-			[
-				"scrip",
-				"source/javascripts/script.js"
-			],
-			[
-				"twe",
-				"data/tweets.yml"
-			],
-			[
-				"color",
-				"source/stylesheets/includes/_colors.scss"
-			],
-			[
-				"data",
-				"source/blog/a-guide-to-meteor-templates-data-contexts.md.erb"
-			],
-			[
-				"port",
-				"source/stylesheets/includes/_portraits.scss"
-			],
-			[
-				"summ",
-				"source/partials/_summary.haml"
-			],
-			[
-				"packa",
-				"source/partials/_package_item.haml"
-			],
-			[
-				"pack",
-				"source/stylesheets/includes/_packages.scss"
-			],
-			[
-				"tshirt",
-				"source/tshirt.html.haml"
-			],
-			[
-				"config.ru",
-				"config.ru"
-			],
-			[
-				"one",
-				"source/blog/discover-meteor-one-year-anniversary-sale.md.erb"
-			],
-			[
-				"thank",
-				"source/tshirt-thanks.html.haml"
-			],
-			[
-				"blog_pos",
-				"source/stylesheets/includes/_blog_post.scss"
-			],
-			[
-				"pages.s",
-				"source/stylesheets/includes/_pages.scss"
-			],
-			[
-				"blonk",
-				"source/blog/blonk-building-tinder-for-jobs-with-meteor-for-mobile.md.erb"
-			],
-			[
-				"space",
-				"source/blog/spacebars-secrets-exploring-meteor-new-templating-engine.md.erb"
-			],
-			[
-				"prism",
-				"source/blog/prisma-extending-photoshop-with-meteor.md.erb"
-			],
-			[
-				"scip",
-				"source/javascripts/script.js"
-			],
-			[
-				"cas",
-				"data/case_studies.yml"
-			],
-			[
-				"oneyea",
-				"source/blog/discover-meteor-one-year-anniversary-sale.md.erb"
-			],
-			[
-				"draft",
-				"source/drafts.html.haml"
-			],
-			[
-				"transla",
-				"source/partials/_translations_list.haml"
-			],
-			[
-				"transl",
-				"source/translations.html.haml"
-			],
-			[
-				"blog_ar",
-				"source/stylesheets/includes/_blog_archive.scss"
-			],
-			[
-				"anniv",
-				"source/blog/discover-meteor-one-year-anniversary-sale.md.erb"
-			],
-			[
-				"la",
-				"source/layouts/layout.haml"
-			],
-			[
-				"script",
-				"source/javascripts/script.js"
-			],
-			[
-				"draftsone",
-				"source/drafts/discover-meteor-one-year-anniversary-sale.md.erb"
-			],
-			[
-				"guide",
-				"source/guidelines.html.haml"
-			],
-			[
-				"meetup",
-				"source/meetups.html.haml"
-			],
-			[
-				"spac",
-				"source/blog/spacebars-secrets-exploring-meteor-new-templating-engine.md.erb"
-			],
-			[
-				"datacon",
-				"source/blog/a-guide-to-meteor-templates-data-contexts.md.erb"
-			],
-			[
-				"post_l",
-				"source/layouts/post_layout.haml"
-			],
-			[
-				"mix",
-				"source/stylesheets/includes/_mixins.scss"
-			],
-			[
-				"figur",
-				"source/stylesheets/includes/_figures.scss"
-			],
-			[
-				"tinder",
-				"source/blog/blonk-building-tinder-for-jobs-with-meteor-for-mobile.md.erb"
-			],
-			[
-				"java",
-				"source/blog/javascript-for-meteor.md.erb"
 			]
 		],
 		"width": 0.0
@@ -1470,6 +1646,7 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1478,6 +1655,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
